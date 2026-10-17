@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MLP-Bench: Towards End-to-End Formal Research Assistance in Machine Learning Theory</title>
+<meta name="description" content="MLP-Bench, a 360-problem benchmark spanning 16 topics, evaluates LLM agents on forward construction and backward verification in Lean through auto-formalization, theorem-proving, and proof-verification.">
+<meta property="og:title" content="MLP-Bench: Towards End-to-End Formal Research Assistance in Machine Learning Theory">
+<meta property="og:description" content="The first Lean benchmark for end-to-end LLM assistance in ML theory research: 360 problems across 16 topics.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#3a8fdc">
+<link rel="icon" type="image/png" sizes="64x64" href="static/images/favicon.png?v=2">
+<link rel="icon" href="static/images/favicon.ico?v=2" sizes="16x16 32x32 48x48">
+<link rel="apple-touch-icon" href="static/images/apple-touch-icon.png?v=2">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="static/css/style.css?v=16">
+</head>
+<body>
+<a class="skip" href="#abstract">Skip to paper content</a>
+
+<nav class="topnav" aria-label="Sections">
+  <a class="brand" href="#top"><span class="ac">MLP</span>-Bench</a>
+  <ul>
+    <li><a href="#demo">Demo</a></li>
+    <li><a href="#abstract">Abstract</a></li>
+    <li><a href="#tasks">Tasks</a></li>
+    <li><a href="#benchmark">Benchmark</a></li>
+    <li><a href="#results">Results</a></li>
+    <li><a href="#analysis">Analysis</a></li>
+  </ul>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-inner">
+    <p class="eyebrow">Machine Learning · Lean · Proof</p>
+    <h1 class="publication-title"><span class="ac">MLP-Bench</span>: Towards End-to-End Formal Research Assistance in Machine Learning Theory</h1>
+    <p class="subtitle">Are today's LLM agents ready to assist <span class="hl">theoretical ML research</span> end-to-end under <span class="hl">formal verification</span>?</p>
+    <p class="authors"><span>Yaowenqi Liu<sup>*</sup></span>, <span>Ruida Wang<sup>*</sup></span>, <span>Rui Pan<sup>*</sup></span>, <span>Yuxing Liu</span>, <span>Yifan Hao</span>, <span>Tong Zhang</span></p>
+    <p class="affils"><span>University of Illinois Urbana-Champaign</span><span><sup>*</sup>Co-first authors</span></p>
+    <nav class="links" aria-label="Paper resources">
+      <a class="btn" href="#abstract">Read overview ↗</a>
+      <a class="btn ghost" href="#results">Explore results ↓</a>
+      <span class="btn soon" aria-disabled="true">Paper · Coming soon</span>
+      <span class="btn soon" aria-disabled="true">Code &amp; Data · Coming soon</span>
+    </nav>
+  </div>
+
+  <!-- Interactive examples adapted from the MLP-Bench task figure. -->
+  <section class="demo-wrap" id="demo" aria-label="MLP-Bench interactive task examples">
+    <div class="demo-tabs" role="tablist" aria-label="Benchmark task">
+      <button type="button" role="tab" id="tab-auto" data-task="auto" aria-selected="true" aria-controls="mlp-example-frame">Auto-formalization</button>
+      <button type="button" role="tab" id="tab-prove" data-task="prove" aria-selected="false" aria-controls="mlp-example-frame" tabindex="-1">Theorem-proving</button>
+      <button type="button" role="tab" id="tab-verify" data-task="verify" aria-selected="false" aria-controls="mlp-example-frame" tabindex="-1" class="backward">Proof-verification</button>
+    </div>
+    <div class="demo">
+      <iframe id="mlp-example-frame" src="static/animations/mlp_examples.html?v=16" title="MLP-Bench interactive task examples" scrolling="auto"></iframe>
+    </div>
+  </section>
+</header>
+
+<main>
+
+<section class="section" id="abstract">
+  <div class="container narrow">
+    <p class="kicker">Abstract</p>
+    <div class="prose">
+      <p>Large language models (LLMs) have demonstrated strong mathematical reasoning and autonomous research abilities, yet whether they can assist the rigorous construction and verification of machine learning (ML) theory remains underexplored. Since ML theory rests on precise assumptions and derivations, we ground our study in Lean, which mechanically checks every derivation against its stated assumptions. Mirroring how theory is actually developed and refereed, we frame formal ML theory research as two complementary capabilities: <em>forward construction</em>, which assists theory derivation, and <em>backward verification</em>, which assists reviewing.</p>
+      <p>We instantiate this framework in the <strong>M</strong>achine Learning <strong>L</strong>ean <strong>P</strong>roof Benchmark (<strong>MLP-Bench</strong>), a 360-problem benchmark spanning 16 topics. <em>Forward construction</em> is realized by two tasks, formalizing natural-language (NL) theorems into Lean statements and proving given Lean statements. <em>Backward verification</em> is realized by a third task, judging whether a proof is correct and, if not, localizing the first erroneous step with Lean-checked evidence.</p>
+      <p>Evaluating 11 models, <em>forward construction</em> remains challenging. Auto-formalization reaches at most a <strong>27.5%</strong> bidirectional equivalence (BEq) pass rate against gold Lean statements, with omitted implicit assumptions a major failure mode, and specialized provers solve <strong>0.0%</strong> of theorem-proving problems. In <em>backward verification</em>, models localize errors more reliably by constructing Lean-checked refutation than by attempting to prove each step. To our knowledge, MLP-Bench is the first Lean benchmark for end-to-end LLM assistance in ML theory research.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="tasks">
+  <div class="container narrow">
+    <p class="kicker">Two directions · Three tasks</p>
+    <h2>Forward construction &amp; backward verification</h2>
+    <p class="lead">MLP-Bench evaluates <em>forward construction</em> and <em>backward verification</em> in Lean through auto-formalization, theorem-proving, and proof-verification.</p>
+  </div>
+  <div class="container">
+    <div class="task-grid">
+      <article class="task flip" tabindex="0" aria-label="Auto-formalization: flip for input, output and metric">
+        <div class="flip-inner">
+          <div class="face front">
+            <span class="tag">Forward construction</span>
+            <h3><span class="num">01</span>Auto-formalization</h3>
+            <p>Given a Lean 4 file with one target theorem’s statement blanked out, together with the NL source theorem and its context, the model must restore the statement while preserving the intended mathematical meaning. The proof is fixed to <code>sorry</code>.</p>
+            <span class="flip-hint" aria-hidden="true">Input · Output · Metric ↻</span>
+          </div>
+          <div class="face back">
+            <span class="tag">Forward construction</span>
+            <h3><span class="num">01</span>Auto-formalization</h3>
+            <dl><dt>Input</dt><dd>NL source theorem + context</dd><dt>Output</dt><dd>Lean statement</dd><dt>Metric</dt><dd>BEq and validity rate</dd></dl>
+          </div>
+        </div>
+      </article>
+      <article class="task flip" tabindex="0" aria-label="Theorem-proving: flip for input, output and metric">
+        <div class="flip-inner">
+          <div class="face front">
+            <span class="tag">Forward construction</span>
+            <h3><span class="num">02</span>Theorem-proving</h3>
+            <p>Given a Lean 4 file with a human-verified target statement and its proof replaced by <code>sorry</code>, the model must supply a complete Lean proof without changing the statement.</p>
+            <span class="flip-hint" aria-hidden="true">Input · Output · Metric ↻</span>
+          </div>
+          <div class="face back">
+            <span class="tag">Forward construction</span>
+            <h3><span class="num">02</span>Theorem-proving</h3>
+            <dl><dt>Input</dt><dd>Lean statement (proof = sorry)</dd><dt>Output</dt><dd>Complete Lean proof</dd><dt>Metric</dt><dd>Lean-verified proof success rate</dd></dl>
+          </div>
+        </div>
+      </article>
+      <article class="task flip backward" tabindex="0" aria-label="Proof-verification: flip for input, output and metric">
+        <div class="flip-inner">
+          <div class="face front">
+            <span class="tag backward">Backward verification</span>
+            <h3><span class="num">03</span>Proof-verification</h3>
+            <p>Each problem presents 3–5 ordered theorems with NL proofs pre-segmented into steps. The model must formalize every step in Lean itself and locate the first substantive error, if any.</p>
+            <span class="flip-hint" aria-hidden="true">Input · Output · Metric ↻</span>
+          </div>
+          <div class="face back">
+            <span class="tag backward">Backward verification</span>
+            <h3><span class="num">03</span>Proof-verification</h3>
+            <dl><dt>Input</dt><dd>3–5 ordered theorems with NL proofs</dd><dt>Output</dt><dd>Earliest flagged step, or no error</dd><dt>Metrics</dt><dd>Precision, recall, accuracy, and F1</dd></dl>
+          </div>
+        </div>
+      </article>
+    </div>
+    <figure class="figure">
+      <div class="zoom" data-zoom data-hd="static/images/mlp/tasks_hd.png" tabindex="0" role="group" aria-label="Zoomable figure: use the buttons, Ctrl or Command plus scroll, or double-click to zoom; drag to pan.">
+        <div class="zoom-viewport"><img src="static/images/mlp/tasks.png" alt="Examples of the three MLP-Bench tasks from the paper." width="2000" height="1225" loading="lazy" draggable="false"></div>
+        <div class="zoom-controls">
+          <button type="button" data-act="in" aria-label="Zoom in">+</button>
+          <button type="button" data-act="out" aria-label="Zoom out">−</button>
+          <span class="zoom-level" aria-live="polite">100%</span>
+          <button type="button" data-act="reset" class="zoom-reset">Reset</button>
+          <a href="static/images/mlp/tasks_hd.png" target="_blank" rel="noopener" aria-label="Open full-resolution image">↗</a>
+        </div>
+      </div>
+      <figcaption><strong>MLP-Bench forward-backward framework:</strong> <em>Forward construction</em> (top) covers auto-formalization and theorem-proving. <em>Backward verification</em> (bottom) covers proof verification, localizing the first erroneous step with Lean-checked evidence.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="section" id="benchmark">
+  <div class="container narrow">
+    <p class="kicker">The benchmark</p>
+    <h2>360 problems across 16 topics</h2>
+  </div>
+  <div class="container">
+    <div class="metrics">
+      <div class="metric"><b>360</b><span>Benchmark problems</span></div>
+      <div class="metric"><b>16</b><span>ML theory topics</span></div>
+      <div class="metric"><b>3</b><span>Complementary tasks</span></div>
+      <div class="metric"><b>11</b><span>Evaluated models</span></div>
+    </div>
+    <div class="split">
+      <div>
+        <p class="lead">For <em>forward construction</em>, we draw graduate-level tasks from graduate instructional materials and research-level tasks from JMLR papers published between 2002 and 2024.</p>
+        <div class="facts">
+          <div class="fact"><strong>120 theorem instances</strong><p>Each yielding one auto-formalization problem and one theorem-proving problem, for a total of <b>240 problems</b>. Each theorem instance includes the original NL theorem, context, and proof, along with a verified Lean statement and its gold proof.</p></div>
+          <div class="fact"><strong>120 proof-verification problems</strong><p>Each presents three to five ordered theorems with their NL proofs; 60 contain a substantive error and 60 are fully correct. Real flawed cases are recovered from ICLR submissions and public peer reviews (2016–2026); synthetic cases introduce a localized error into a verified proof.</p></div>
+          <div class="fact"><strong>Formalization &amp; validation</strong><p>Candidates undergo manual semantic faithfulness checks and Lean compilation. All 120 Lean statements have gold proofs aligned with their original NL proofs. Human reviewers verify that the labeled step is the first <em>substantive error</em>, with all preceding steps valid.</p></div>
+        </div>
+      </div>
+      <figure class="figure">
+        <a href="static/images/mlp/topics.png" target="_blank" rel="noopener"><img src="static/images/mlp/topics.png" alt="Sunburst chart showing the distribution of MLP-Bench topics." width="1401" height="1400" loading="lazy"></a>
+        <figcaption><strong>Topic distribution of MLP-Bench.</strong></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="results">
+  <div class="container narrow">
+    <p class="kicker">Experimental results</p>
+    <h2>Main results</h2>
+    <p class="lead">We evaluate 11 open- and closed-source models, comparing Chain-of-Thought (CoT) with autonomous agents. For agent evaluations, we use Codex as the default harness and Claude Code for Claude models.</p>
+  </div>
+  <div class="container">
+    <div class="finding-grid">
+      <article class="finding">
+        <span class="tag">Auto-formalization</span>
+        <div class="stat"><span class="stat-num">27.5<small>%</small></span><span class="stat-sub">Best auto-formalization BEq</span></div>
+        <div class="bars">
+          <p class="bars-title">BEq, Agent (%)</p>
+          <div class="bar-row top"><span class="bar-label">Claude-Opus-5</span><span class="bar"><i style="--v:27.5"></i></span><span class="bar-val">27.5</span></div>
+          <div class="bar-row"><span class="bar-label">GPT-5.6-Sol</span><span class="bar"><i style="--v:25.0"></i></span><span class="bar-val">25.0</span></div>
+          <div class="bar-row"><span class="bar-label">GPT-5.6-Terra</span><span class="bar"><i style="--v:18.3"></i></span><span class="bar-val">18.3</span></div>
+          <div class="bar-row"><span class="bar-label">Claude-Sonnet-5</span><span class="bar"><i style="--v:17.5"></i></span><span class="bar-val">17.5</span></div>
+        </div>
+      </article>
+      <article class="finding">
+        <span class="tag">Theorem-proving</span>
+        <div class="stat"><span class="stat-num">41.7<small>%</small></span><span class="stat-sub">Best research proving success</span></div>
+        <div class="bars">
+          <p class="bars-title">Research, Agent (%)</p>
+          <div class="bar-row top"><span class="bar-label">GPT-5.6-Sol</span><span class="bar"><i style="--v:41.7"></i></span><span class="bar-val">41.7</span></div>
+          <div class="bar-row"><span class="bar-label">Claude-Opus-5</span><span class="bar"><i style="--v:40.0"></i></span><span class="bar-val">40.0</span></div>
+          <div class="bar-row"><span class="bar-label">Claude-Sonnet-5</span><span class="bar"><i style="--v:28.3"></i></span><span class="bar-val">28.3</span></div>
+          <div class="bar-row"><span class="bar-label">GPT-5.6-Terra</span><span class="bar"><i style="--v:10.0"></i></span><span class="bar-val">10.0</span></div>
+        </div>
+      </article>
+      <article class="finding">
+        <span class="tag backward">Proof-verification</span>
+        <div class="stat"><span class="stat-num">61.7<small>%</small></span><span class="stat-sub">Best verification F1</span></div>
+        <div class="bars">
+          <p class="bars-title">F1, Agent + FL Refute (%)</p>
+          <div class="bar-row top"><span class="bar-label">Claude-Opus-5</span><span class="bar"><i style="--v:61.7"></i></span><span class="bar-val">61.7</span></div>
+          <div class="bar-row"><span class="bar-label">Claude-Sonnet-5</span><span class="bar"><i style="--v:41.8"></i></span><span class="bar-val">41.8</span></div>
+          <div class="bar-row"><span class="bar-label">GPT-5.6-Sol</span><span class="bar"><i style="--v:38.2"></i></span><span class="bar-val">38.2</span></div>
+          <div class="bar-row"><span class="bar-label">GPT-5.6-Terra</span><span class="bar"><i style="--v:29.9"></i></span><span class="bar-val">29.9</span></div>
+        </div>
+      </article>
+    </div>
+
+    <div class="result-stack">
+      <article class="result-block">
+        <h3><span class="num">01</span>Auto-formalization</h3>
+        <p>Faithfully translating natural-language theorems into Lean remains challenging. Claude-Opus-5 achieves the highest agentic BEq score, but only 27.5% of its statements are verified as equivalent to the gold.</p>
+        <div class="table-scroll" tabindex="0" role="region" aria-label="Auto-formalization results">
+          <table class="results">
+            <caption>Auto-formalization results on 120 theorems, reporting BEq and validity (Valid) rates (%) under CoT and Agent settings.</caption>
+            <thead><tr><th scope="col">Model</th><th scope="col">BEq<br>CoT</th><th scope="col">BEq<br>Agent</th><th scope="col">Valid<br>CoT</th><th scope="col">Valid<br>Agent</th></tr></thead>
+            <tbody>
+              <tr class="group"><th scope="rowgroup" colspan="5">Closed-source models</th></tr>
+              <tr><th scope="row">GPT-5.6-Luna</th><td>13.3</td><td>17.5</td><td>41.7</td><td>55.8</td></tr>
+              <tr><th scope="row">GPT-5.6-Terra</th><td>13.3</td><td>18.3</td><td>40.0</td><td>55.0</td></tr>
+              <tr><th scope="row">GPT-5.6-Sol</th><td>20.8</td><td>25.0</td><td>49.2</td><td>66.7</td></tr>
+              <tr><th scope="row">Claude-Sonnet-5</th><td>15.0</td><td>17.5</td><td>50.8</td><td>64.2</td></tr>
+              <tr><th scope="row">Claude-Opus-5</th><td class="best">23.3</td><td class="best">27.5</td><td class="best">74.2</td><td class="best">78.3</td></tr>
+              <tr class="group"><th scope="rowgroup" colspan="5">Open-source models</th></tr>
+              <tr><th scope="row">DeepSeek-V4 Flash</th><td>10.0</td><td>15.0</td><td>38.3</td><td>45.8</td></tr>
+              <tr><th scope="row">Gemma-4 26B-A4B</th><td>0.0</td><td>0.0</td><td>17.5</td><td>20.0</td></tr>
+              <tr><th scope="row">Qwen3.5-9B</th><td>0.0</td><td>0.0</td><td>15.0</td><td>16.7</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <article class="result-block">
+        <h3><span class="num">02</span>Theorem-proving</h3>
+        <p>Successful proof construction largely depends on agentic iteration and repair. CoT achieves at most 1.7% on graduate problems and 0.0% on research problems, whereas agents reach 68.3% and 41.7%, respectively. Yet all three open-source specialized provers score 0.0% on both splits, even when sampling is scaled up to pass@32.</p>
+        <div class="table-scroll" tabindex="0" role="region" aria-label="Theorem-proving results">
+          <table class="results">
+            <caption>Theorem-proving results on 60 graduate and 60 research-level Lean statements, reporting Lean-verified proof success rates (%).</caption>
+            <thead><tr><th scope="col">Model</th><th scope="col">Graduate<br>CoT</th><th scope="col">Graduate<br>Agent</th><th scope="col">Research<br>CoT</th><th scope="col">Research<br>Agent</th></tr></thead>
+            <tbody>
+              <tr class="group"><th scope="rowgroup" colspan="5">Closed-source models</th></tr>
+              <tr><th scope="row">GPT-5.6-Luna</th><td>0.0</td><td>3.3</td><td>0.0</td><td>10.0</td></tr>
+              <tr><th scope="row">GPT-5.6-Terra</th><td>0.0</td><td>5.0</td><td>0.0</td><td>10.0</td></tr>
+              <tr><th scope="row">GPT-5.6-Sol</th><td class="best">1.7</td><td>48.3</td><td>0.0</td><td class="best">41.7</td></tr>
+              <tr><th scope="row">Claude-Sonnet-5</th><td>0.0</td><td>46.7</td><td>0.0</td><td>28.3</td></tr>
+              <tr><th scope="row">Claude-Opus-5</th><td>0.0</td><td class="best">68.3</td><td>0.0</td><td>40.0</td></tr>
+              <tr class="group"><th scope="rowgroup" colspan="5">Open-source provers</th></tr>
+              <tr><th scope="row">Kimina-Prover-Distill-8B</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+              <tr><th scope="row">DeepSeek-Prover-V2-7B</th><td>0.0</td><td class="na">–</td><td>0.0</td><td class="na">–</td></tr>
+              <tr><th scope="row">Goedel-Prover-V2-8B</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <article class="result-block">
+        <h3><span class="num">03</span>Proof-verification</h3>
+        <p>FL Refute consistently outperforms FL Prove across all five closed-source models. In the Agent setting, switching from FL Prove to FL Refute raises GPT-5.6-Luna’s F1 from 3.4% to 17.9% and Claude-Opus-5’s from 24.8% to 61.7%. This suggests that a Lean-checked refutation is a more reliable error signal than a failed proof attempt.</p>
+        <div class="rules">
+          <div class="rule"><strong>FL Prove</strong><p>Flags the first step the model fails to prove, treating proof failure as a rejection signal.</p></div>
+          <div class="rule refute"><strong>FL Refute</strong><p>Flags a step only when Lean accepts the model’s refutation of the step’s formalization.</p></div>
+        </div>
+        <div class="table-scroll" tabindex="0" role="region" aria-label="Proof-verification results">
+          <table class="results">
+            <caption>Proof-verification results on 120 MLP-Bench problems in the Agent setting, comparing FL Prove and FL Refute (%).</caption>
+            <thead><tr><th scope="col">Model</th><th scope="col">Accuracy<br>FL Prove</th><th scope="col">Accuracy<br>FL Refute</th><th scope="col">F1<br>FL Prove</th><th scope="col">F1<br>FL Refute</th></tr></thead>
+            <tbody>
+              <tr class="group"><th scope="rowgroup" colspan="5">Closed-source models</th></tr>
+              <tr><th scope="row">GPT-5.6-Luna</th><td>2.5</td><td>19.2</td><td>3.4</td><td>17.9</td></tr>
+              <tr><th scope="row">GPT-5.6-Terra</th><td>3.3</td><td>32.5</td><td>4.4</td><td>29.9</td></tr>
+              <tr><th scope="row">GPT-5.6-Sol</th><td>10.8</td><td>39.2</td><td>11.5</td><td>38.2</td></tr>
+              <tr><th scope="row">Claude-Sonnet-5</th><td>19.2</td><td>55.0</td><td>16.6</td><td>41.8</td></tr>
+              <tr><th scope="row">Claude-Opus-5</th><td class="best">35.8</td><td class="best">67.5</td><td class="best">24.8</td><td class="best">61.7</td></tr>
+              <tr class="group"><th scope="rowgroup" colspan="5">Open-source models</th></tr>
+              <tr><th scope="row">DeepSeek-V4 Flash</th><td>1.7</td><td>25.0</td><td>2.3</td><td>6.2</td></tr>
+              <tr><th scope="row">Gemma-4 26B-A4B</th><td>0.0</td><td>0.8</td><td>0.0</td><td>0.0</td></tr>
+              <tr><th scope="row">Qwen3.5-9B</th><td>0.0</td><td>0.0</td><td>0.0</td><td>0.0</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="analysis">
+  <div class="container narrow">
+    <p class="kicker">Experiment analysis</p>
+  </div>
+  <div class="container wide">
+    <div class="panels">
+      <article class="panel">
+        <span class="tag">Auto-formalization</span>
+        <h3>Assumption omission is a major problem.</h3>
+        <p>Even among Lean statements that compile, 65.0–83.8% are flagged as omitting at least one assumption in the gold statement. Recovering the necessary assumptions is necessary but not sufficient.</p>
+        <figure class="figure">
+          <a href="static/images/mlp/assumptions.png" target="_blank" rel="noopener"><img src="static/images/mlp/assumptions.png" alt="Paper analysis of omitted assumptions by assumption family." width="1600" height="952" loading="lazy"></a>
+          <figcaption><strong>Omitted assumptions by family</strong> for two leading models.</figcaption>
+        </figure>
+      </article>
+      <article class="panel">
+        <span class="tag">Theorem-proving</span>
+        <h3>Single-step proving.</h3>
+        <p>On 150 non-trivial leaf subgoals extracted from gold proofs, specialized provers solve only 12.7–18.7%, compared with 52.0–84.7% for general-purpose models.</p>
+        <figure class="figure">
+          <div class="bars">
+            <div class="bar-row top"><span class="bar-label">Claude-Opus-5</span><span class="bar"><i style="--v:84.7"></i></span><span class="bar-val">84.7</span></div>
+            <div class="bar-row"><span class="bar-label">GPT-5.6-Sol</span><span class="bar"><i style="--v:70.0"></i></span><span class="bar-val">70.0</span></div>
+            <div class="bar-row"><span class="bar-label">Claude-Sonnet-5</span><span class="bar"><i style="--v:64.0"></i></span><span class="bar-val">64.0</span></div>
+            <div class="bar-row"><span class="bar-label">GPT-5.6-Terra</span><span class="bar"><i style="--v:60.7"></i></span><span class="bar-val">60.7</span></div>
+            <div class="bar-row"><span class="bar-label">GPT-5.6-Luna</span><span class="bar"><i style="--v:52.0"></i></span><span class="bar-val">52.0</span></div>
+            <div class="bar-row"><span class="bar-label">DeepSeek-Prover-V2-7B</span><span class="bar"><i style="--v:18.7"></i></span><span class="bar-val">18.7</span></div>
+            <div class="bar-row"><span class="bar-label">Goedel-Prover-V2-8B</span><span class="bar"><i style="--v:15.3"></i></span><span class="bar-val">15.3</span></div>
+            <div class="bar-row"><span class="bar-label">Kimina-Prover-Distill-8B</span><span class="bar"><i style="--v:12.7"></i></span><span class="bar-val">12.7</span></div>
+          </div>
+          <figcaption><strong>Solve rates on 150 subgoals</strong> (%).</figcaption>
+        </figure>
+      </article>
+      <article class="panel">
+        <span class="tag backward">Proof-verification</span>
+        <h3>FL Prove introduces an early-localization bias.</h3>
+        <p>FL Prove predominantly reports steps before the first actual error. FL Refute instead requires a Lean-checked refutation, shifting reports toward the gold step.</p>
+        <figure class="figure">
+          <a href="static/images/mlp/refutation.png" target="_blank" rel="noopener"><img src="static/images/mlp/refutation.png" alt="Error-localization offsets for FL Prove and FL Refute." width="1600" height="711" loading="lazy"></a>
+          <figcaption><strong>Error-localization offsets</strong>, averaged across five models.</figcaption>
+        </figure>
+      </article>
+    </div>
+    <div class="callout">
+      <p class="callout-kicker">Conclusion</p>
+      <p>Current agents struggle to recover implicit assumptions and construct complete proofs, yet readily refute false Lean statements. Their current promise lies more in assisting critical scrutiny than in producing rigorous theoretical results.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p><strong>MLP-Bench</strong> · Machine Learning Lean Proof Benchmark</p>
+    <p>Website template adapted from the <a href="https://hc-dlm.github.io/" target="_blank" rel="noopener">HC-DLM</a> project page. <a href="#top">Back to top ↑</a></p>
+  </div>
+</footer>
+<script src="static/js/zoom.js?v=1"></script>
+<script>
+// Task cards flip on hover (desktop) or on tap / Enter / Space (touch and keyboard).
+document.querySelectorAll('.flip').forEach(card => {
+  const toggle = () => card.classList.toggle('is-flipped');
+  card.addEventListener('click', e => { if (!matchMedia('(hover: hover)').matches) toggle(); });
+  card.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); } });
+});
+</script>
+<script>
+// Task tabs above the demo: tell the iframe which example to play.
+(function () {
+  const frame = document.getElementById('mlp-example-frame');
+  const tabs = [...document.querySelectorAll('.demo-tabs [role=tab]')];
+  function select(tab) {
+    tabs.forEach(t => { const on = t === tab; t.setAttribute('aria-selected', String(on)); t.tabIndex = on ? 0 : -1; });
+    frame.contentWindow.postMessage({ type: 'mlp-select-task', task: tab.dataset.task }, '*');
+  }
+  tabs.forEach((tab, i) => {
+    tab.addEventListener('click', () => select(tab));
+    tab.addEventListener('keydown', e => {
+      const next = { ArrowRight: i + 1, ArrowLeft: i - 1, Home: 0, End: tabs.length - 1 }[e.key];
+      if (next === undefined) return;
+      e.preventDefault();
+      const t = tabs[(next + tabs.length) % tabs.length];
+      t.focus(); select(t);
+    });
+  });
+})();
+</script>
+</body>
+</html>
