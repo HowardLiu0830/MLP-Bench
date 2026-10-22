@@ -1,0 +1,32 @@
+# LiteLLM route for the agentic open-weights path:
+#
+#   codex CLI --(OpenAI /v1/responses)--> LiteLLM proxy --(OpenAI /v1/chat/completions)--> vLLM
+#
+# Model names `local/<hf-id>` map to `<hf-id>` on the vLLM server at $VLLM_BASE_URL.
+#
+# use_chat_completions_api: LiteLLM would otherwise forward codex's Responses calls to vLLM's
+# own /v1/responses; this bridges them to /v1/chat/completions instead, where the tool calls
+# are parsed by serve_vllm.sh's --tool-call-parser.
+#
+# max_tokens is capped at 16384: the server adds the requested output budget to the prompt
+# before checking its window, so a long agent prompt plus a large budget overflows a 65536
+# window and every call dies before the model sees anything. 4096 is the other mistake -- it
+# truncates a multi-turn Lean loop mid-tool-call. Serve with MAXLEN=131072.
+#
+# enable_thinking: false -- Qwen3.x otherwise can spend the whole budget thinking and return
+# no answer. Remove it to let the model think.
+model_list:
+- model_name: local/*
+  litellm_params:
+    model: openai/*
+    api_base: os.environ/VLLM_BASE_URL
+    api_key: dummy
+    use_chat_completions_api: true
+    max_tokens: 16384
+    extra_body:
+      chat_template_kwargs:
+        enable_thinking: false
+litellm_settings:
+  drop_params: true
+  num_retries: 2
+general_settings: {}

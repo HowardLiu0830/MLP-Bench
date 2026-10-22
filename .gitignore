@@ -1,0 +1,16 @@
+# environment
+.venv/
+__pycache__/
+*.egg-info/
+.env
+
+# outputs
+runs/
+
+# Lean build (multi-GB)
+lean/.lake/
+
+# backups made by manual edits
+*.bak
+*.bak.*
+multi-seed-results/

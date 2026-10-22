@@ -1,0 +1,1698 @@
+{
+  "_comment": [
+    "Attribution for the third-party material the benchmark data is derived from.",
+    "`papers`: JMLR. Every record was read from the published PDF's page-1 footer. Volume 18 (2017) onward is CC-BY 4.0; earlier volumes state no public licence, and those 4 papers' text is rewritten in our own words.",
+    "`iclr`: ICLR papers on OpenReview under CC-BY 4.0. Each `key` is the OpenReview forum id and the item id in backward-verification.jsonl; the forum page carries the title, authors and licence.",
+    "`lecture_sources`: lecture notes and textbooks, each publicly available or used with the permission of its authors.",
+    "Our own contributions (Lean statements and proofs, labels, annotations, text we wrote) are CC BY 4.0, see Benchmarks/LICENSE."
+  ],
+  "papers": [
+    {
+      "key": "v26-21-0039",
+      "used_by": [
+        "fl_verification"
+      ],
+      "title": "Manifold Fitting under Unbounded Noise",
+      "authors": "Zhigang Yao, Yuqing Xia",
+      "journal": "Journal of Machine Learning Research",
+      "volume": "26",
+      "issue": "45",
+      "pages": "1-55",
+      "year": "2025",
+      "url": "https://jmlr.org/papers/v26/21-0039.html",
+      "pdf_url": "https://jmlr.org/papers/volume26/21-0039/21-0039.pdf",
+      "modifications": [
+        "excerpt only: selected line spans of text converted from the published PDF by an OCR pipeline (MinerU), with the OCR's LaTeX spacing tightened; running headers and footers, including the copyright and licence lines, were dropped"
+      ],
+      "copyright_notice": "©2025 Zhigang Yao and Yuqing Xia.",
+      "license": "CC-BY-4.0",
+      "license_evidence": "CC-BY 4.0 line printed in the page-1 footer of the published PDF"
+    },
+    {
+      "key": "v26-22-1262",
+      "used_by": [
+        "fl_verification"
+      ],
+      "title": "Unbalanced Kantorovich-Rubinstein distance, plan, and barycenter on finite spaces: A statistical perspective",
+      "authors": "Shayan Hundrieser, Florian Heinemann, Marcel Klatt, Marina Struleva, Axel Munk",
+      "journal": "Journal of Machine Learning Research",
+      "volume": "26",
+      "issue": "37",
+      "pages": "1-70",
+      "year": "2025",
+      "url": "https://jmlr.org/papers/v26/22-1262.html",
+      "pdf_url": "https://jmlr.org/papers/volume26/22-1262/22-1262.pdf",
+      "modifications": [
+        "excerpt only: selected line spans of text converted from the published PDF by an OCR pipeline (MinerU), with the OCR's LaTeX spacing tightened; running headers and footers, including the copyright and licence lines, were dropped",
+        "3 correction(s) applied to the text as printed, 3 of them to typographical errors in the published paper rather than to OCR damage"
+      ],
+      "copyright_notice": "©2025 Shayan Hundrieser, Florian Heinemann, Marcel Klatt, Marina Struleva, Axel Munk.",
+      "license": "CC-BY-4.0",
+      "license_evidence": "CC-BY 4.0 line printed in the page-1 footer of the published PDF"
+    },
+    {
+      "key": "v26-23-0102",
+      "used_by": [
+        "fl_verification"
+      ],
+      "title": "On Model Identification and Out-of-Sample Prediction of PCR with Applications to Synthetic Controls",
+      "authors": "Anish Agarwal, Devavrat Shah, Dennis Shen",
+      "journal": "Journal of Machine Learning Research",
+      "volume": "26",
+      "issue": "117",
+      "pages": "1-58",
+      "year": "2025",
+      "url": "https://jmlr.org/papers/v26/23-0102.html",
+      "pdf_url": "https://jmlr.org/papers/volume26/23-0102/23-0102.pdf",
+      "modifications": [
+        "excerpt only: selected line spans of text converted from the published PDF by an OCR pipeline (MinerU), with the OCR's LaTeX spacing tightened; running headers and footers, including the copyright and licence lines, were dropped",
+        "1 correction(s) applied to the text as printed, 1 of them to typographical errors in the published paper rather than to OCR damage"
+      ],
+      "copyright_notice": "©2025 Anish Agarwal, Devavrat Shah, and Dennis Shen.",
+      "license": "CC-BY-4.0",
+      "license_evidence": "CC-BY 4.0 line printed in the page-1 footer of the published PDF"
+    },
+    {
+      "key": "v26-23-0455",
+      "used_by": [
+        "fl_verification"
+      ],
+      "title": "Biological Sequence Kernels with Guaranteed Flexibility",
+      "authors": "Alan N. Amin, Debora S. Marks, Eli N. Weinstein",
+      "journal": "Journal of Machine Learning Research",
+      "volume": "26",
+      "issue": "216",
+      "pages": "1-63",
+      "year": "2025",
+      "url": "https://jmlr.org/papers/v26/23-0455.html",
+      "pdf_url": "https://jmlr.org/papers/volume26/23-0455/23-0455.pdf",
+      "modifications": [
+        "excerpt only: selected line spans of text converted from the published PDF by an OCR pipeline (MinerU), with the OCR's LaTeX spacing tightened; running headers and footers, including the copyright and licence lines, were dropped",
+        "5 correction(s) applied to the text as printed, 5 of them to typographical errors in the published paper rather than to OCR damage"
+      ],
+      "copyright_notice": "©2025 Alan N. Amin and Debora S. Marks and Eli N. Weinstein.",
+      "license": "CC-BY-4.0",
+      "license_evidence": "CC-BY 4.0 line printed in the page-1 footer of the published PDF"
+    },
+    {
+      "key": "v26-23-0832",
+      "used_by": [
+        "fl_verification"
+      ],
+      "title": "Random Pruning Over-parameterized Neural Networks Can Improve Generalization: A Training Dynamics Analysis",
+      "authors": "Hongru Yang, Yingbin Liang, Xiaojie Guo, Lingfei Wu, Zhangyang Wang",
+      "journal": "Journal of Machine Learning Research",
+      "volume": "26",
+      "issue": "84",
+      "pages": "1-51",
+      "year": "2025",
+      "url": "https://jmlr.org/papers/v26/23-0832.html",
+      "pdf_url": "https://jmlr.org/papers/volume26/23-0832/23-0832.pdf",
+      "modifications": [
+        "excerpt only: selected line spans of text converted from the published PDF by an OCR pipeline (MinerU), with the OCR's LaTeX spacing tightened; running headers and footers, including the copyright and licence lines, were dropped",
+        "text the OCR garbled was rebuilt by comparison with the published PDF",
+        "2 correction(s) applied to the text as printed, 2 of them to typographical errors in the published paper rather than to OCR damage"
+      ],
+      "copyright_notice": "©2025 Hongru Yang, Yingbin Liang, Xiaojie Guo, Lingfei Wu and Zhangyang Wang.",
+      "license": "CC-BY-4.0",
+      "license_evidence": "CC-BY 4.0 line printed in the page-1 footer of the published PDF"
+    },
+    {
+      "key": "v26-23-1104",
+      "used_by": [
+        "fl_verification"
+      ],
+      "title": "Near-Optimal Nonconvex-Strongly-Convex Bilevel Optimization with Fully First-Order Oracles",
+      "authors": "Lesi Chen, Yaohua Ma, Jingzhao Zhang",
+      "journal": "Journal of Machine Learning Research",
+      "volume": "26",
+      "issue": "109",
+      "pages": "1-56",
+      "year": "2025",
+      "url": "https://jmlr.org/papers/v26/23-1104.html",
+      "pdf_url": "https://jmlr.org/papers/volume26/23-1104/23-1104.pdf",
+      "modifications": [
+        "excerpt only: selected line spans of text converted from the published PDF by an OCR pipeline (MinerU), with the OCR's LaTeX spacing tightened; running headers and footers, including the copyright and licence lines, were dropped",
+        "text the OCR garbled was rebuilt by comparison with the published PDF",
+        "4 correction(s) applied to the text as printed, 4 of them to typographical errors in the published paper rather than to OCR damage"
+      ],
+      "copyright_notice": "©2025 Lesi Chen, Yaohua Ma and Jingzhao Zhang.",
+      "license": "CC-BY-4.0",
+      "license_evidence": "CC-BY 4.0 line printed in the page-1 footer of the published PDF"
+    },
+    {
+      "key": "v26-23-1519",
+      "used_by": [
+        "fl_verification"
+      ],
+      "title": "Bagged Regularized k-Distances for Anomaly Detection",
+      "authors": "Yuchao Cai, Hanfang Yang, Yuheng Ma, Hanyuan Hang",
+      "journal": "Journal of Machine Learning Research",
+      "volume": "26",
+      "issue": "178",
+      "pages": "1-59",
+      "year": "2025",
+      "url": "https://jmlr.org/papers/v26/23-1519.html",
+      "pdf_url": "https://jmlr.org/papers/volume26/23-1519/23-1519.pdf",
+      "modifications": [
+        "excerpt only: selected line spans of text converted from the published PDF by an OCR pipeline (MinerU), with the OCR's LaTeX spacing tightened; running headers and footers, including the copyright and licence lines, were dropped",
+        "text the OCR garbled was rebuilt by comparison with the published PDF",
+        "1 correction(s) applied to the text as printed, 1 of them to typographical errors in the published paper rather than to OCR damage"
+      ],
+      "copyright_notice": "©2025 Yuchao Cai, Hanfang Yang, Yuheng Ma, Hanyuan Hang.",
+      "license": "CC-BY-4.0",
+      "license_evidence": "CC-BY 4.0 line printed in the page-1 footer of the published PDF"
+    },
+    {
+      "key": "v26-23-1679",
+      "used_by": [
+        "fl_verification"
+      ],
+      "title": "Optimal Rates of Kernel Ridge Regression under Source Condition in Large Dimensions",
+      "authors": "Haobo Zhang, Yicheng Li, Weihao Lu, Qian Lin",
+      "journal": "Journal of Machine Learning Research",
+      "volume": "26",
+      "issue": "219",
+      "pages": "1-63",
+      "year": "2025",
+      "url": "https://jmlr.org/papers/v26/23-1679.html",
+      "pdf_url": "https://jmlr.org/papers/volume26/23-1679/23-1679.pdf",
+      "modifications": [
+        "excerpt only: selected line spans of text converted from the published PDF by an OCR pipeline (MinerU), with the OCR's LaTeX spacing tightened; running headers and footers, including the copyright and licence lines, were dropped",
+        "4 correction(s) applied to the text as printed, 4 of them to typographical errors in the published paper rather than to OCR damage"
+      ],
+      "copyright_notice": "©2025 Haobo Zhang, Yicheng Li, Weihao Lu and Qian Lin.",
+      "license": "CC-BY-4.0",
+      "license_evidence": "CC-BY 4.0 line printed in the page-1 footer of the published PDF"
+    },
+    {
+      "key": "v26-24-0194",
+      "used_by": [
+        "fl_verification"
+      ],
+      "title": "Score-based Causal Representation Learning: Linear and General Transformations",
+      "authors": "Burak Varici, Emre Acartürk, Karthikeyan Shanmugam, Abhishek Kumar, Ali Tajer",
+      "journal": "Journal of Machine Learning Research",
+      "volume": "26",
+      "issue": "112",
+      "pages": "1-90",
+      "year": "2025",
+      "url": "https://jmlr.org/papers/v26/24-0194.html",
+      "pdf_url": "https://jmlr.org/papers/volume26/24-0194/24-0194.pdf",
+      "modifications": [
+        "excerpt only: selected line spans of text converted from the published PDF by an OCR pipeline (MinerU), with the OCR's LaTeX spacing tightened; running headers and footers, including the copyright and licence lines, were dropped",
+        "text the OCR garbled was rebuilt by comparison with the published PDF",
+        "1 correction(s) applied to the text as printed, 1 of them to typographical errors in the published paper rather than to OCR damage"
+      ],
+      "copyright_notice": "©2025 Burak Varıcı, Emre Acartürk, Karthikeyan Shanmugam, Abhishek Kumar, and Ali Tajer.",
+      "license": "CC-BY-4.0",
+      "license_evidence": "CC-BY 4.0 line printed in the page-1 footer of the published PDF"
+    },
+    {
+      "key": "v26-24-0579",
+      "used_by": [
+        "fl_verification"
+      ],
+      "title": "The Blessing of Heterogeneity in Federated Q-Learning: Linear Speedup and Beyond",
+      "authors": "Jiin Woo, Gauri Joshi, Yuejie Chi",
+      "journal": "Journal of Machine Learning Research",
+      "volume": "26",
+      "issue": "26",
+      "pages": "1-85",
+      "year": "2025",
+      "url": "https://jmlr.org/papers/v26/24-0579.html",
+      "pdf_url": "https://jmlr.org/papers/volume26/24-0579/24-0579.pdf",
+      "modifications": [
+        "excerpt only: selected line spans of text converted from the published PDF by an OCR pipeline (MinerU), with the OCR's LaTeX spacing tightened; running headers and footers, including the copyright and licence lines, were dropped"
+      ],
+      "copyright_notice": "©2025 Jiin Woo, Gauri Joshi, Yuejie Chi.",
+      "license": "CC-BY-4.0",
+      "license_evidence": "CC-BY 4.0 line printed in the page-1 footer of the published PDF"
+    },
+    {
+      "key": "v26-24-1178",
+      "used_by": [
+        "fl_verification"
+      ],
+      "title": "Enhanced Feature Learning via Regularisation: Integrating Neural Networks and Kernel Methods",
+      "authors": "Bertille FOLLAIN, Francis BACH",
+      "journal": "Journal of Machine Learning Research",
+      "volume": "26",
+      "issue": "172",
+      "pages": "1-56",
+      "year": "2025",
+      "url": "https://jmlr.org/papers/v26/24-1178.html",
+      "pdf_url": "https://jmlr.org/papers/volume26/24-1178/24-1178.pdf",
+      "modifications": [
+        "excerpt only: selected line spans of text converted from the published PDF by an OCR pipeline (MinerU), with the OCR's LaTeX spacing tightened; running headers and footers, including the copyright and licence lines, were dropped"
+      ],
+      "copyright_notice": "©2025 Bertille FOLLAIN and Francis BACH.",
+      "license": "CC-BY-4.0",
+      "license_evidence": "CC-BY 4.0 line printed in the page-1 footer of the published PDF"
+    },
+    {
+      "key": "v26-24-2016",
+      "used_by": [
+        "fl_verification"
+      ],
+      "title": "Minimax Optimal Two-Sample Testing under Local Differential Privacy",
+      "authors": "Jongmin Mun, Seungwoo Kwak, Ilmun Kim",
+      "journal": "Journal of Machine Learning Research",
+      "volume": "26",
+      "issue": "252",
+      "pages": "1-79",
+      "year": "2025",
+      "url": "https://jmlr.org/papers/v26/24-2016.html",
+      "pdf_url": "https://jmlr.org/papers/volume26/24-2016/24-2016.pdf",
+      "modifications": [
+        "excerpt only: selected line spans of text converted from the published PDF by an OCR pipeline (MinerU), with the OCR's LaTeX spacing tightened; running headers and footers, including the copyright and licence lines, were dropped",
+        "text the OCR garbled was rebuilt by comparison with the published PDF",
+        "5 correction(s) applied to the text as printed, 4 of them to typographical errors in the published paper rather than to OCR damage, and 1 removing a clause that defines a symbol no longer used once those corrections are applied"
+      ],
+      "copyright_notice": "©2025 Jongmin Mun, Seungwoo Kwak and Ilmun Kim.",
+      "license": "CC-BY-4.0",
+      "license_evidence": "CC-BY 4.0 line printed in the page-1 footer of the published PDF"
+    },
+    {
+      "key": "v26-24-2230",
+      "used_by": [
+        "fl_verification"
+      ],
+      "title": "Frontiers to the learning of nonparametric hidden Markov models",
+      "authors": "Kweku Abraham, Elisabeth Gassiat, Zacharie Naulet",
+      "journal": "Journal of Machine Learning Research",
+      "volume": "26",
+      "issue": "155",
+      "pages": "1-75",
+      "year": "2025",
+      "url": "https://jmlr.org/papers/v26/24-2230.html",
+      "pdf_url": "https://jmlr.org/papers/volume26/24-2230/24-2230.pdf",
+      "modifications": [
+        "excerpt only: selected line spans of text converted from the published PDF by an OCR pipeline (MinerU), with the OCR's LaTeX spacing tightened; running headers and footers, including the copyright and licence lines, were dropped",
+        "1 correction(s) applied to the text as printed, 1 of them to typographical errors in the published paper rather than to OCR damage"
+      ],
+      "copyright_notice": "©2025 Kweku Abraham, Elisabeth Gassiat and Zacharie Naulet.",
+      "license": "CC-BY-4.0",
+      "license_evidence": "CC-BY 4.0 line printed in the page-1 footer of the published PDF"
+    },
+    {
+      "key": "v26-25-0183",
+      "used_by": [
+        "fl_verification"
+      ],
+      "title": "Estimation of Local Geometric Structure on Manifolds from Noisy Data",
+      "authors": "Yariv Aizenbud, Barak Sober",
+      "journal": "Journal of Machine Learning Research",
+      "volume": "26",
+      "issue": "64",
+      "pages": "1-89",
+      "year": "2025",
+      "url": "https://jmlr.org/papers/v26/25-0183.html",
+      "pdf_url": "https://jmlr.org/papers/volume26/25-0183/25-0183.pdf",
+      "modifications": [
+        "excerpt only: selected line spans of text converted from the published PDF by an OCR pipeline (MinerU), with the OCR's LaTeX spacing tightened; running headers and footers, including the copyright and licence lines, were dropped",
+        "text the OCR garbled was rebuilt by comparison with the published PDF",
+        "2 correction(s) applied to the text as printed, 2 of them to typographical errors in the published paper rather than to OCR damage"
+      ],
+      "copyright_notice": "©2025 Yariv Aizenbud and Barak Sober.",
+      "license": "CC-BY-4.0",
+      "license_evidence": "CC-BY 4.0 line printed in the page-1 footer of the published PDF"
+    },
+    {
+      "key": "v26-25-0657",
+      "used_by": [
+        "fl_verification"
+      ],
+      "title": "Second-order Information Promotes Mini-Batch Robustness in Variance-Reduced Gradients",
+      "authors": "Sachin Garg, Albert S. Berahas, Michał Dereziński",
+      "journal": "Journal of Machine Learning Research",
+      "volume": "26",
+      "issue": "306",
+      "pages": "1-49",
+      "year": "2025",
+      "url": "https://jmlr.org/papers/v26/25-0657.html",
+      "pdf_url": "https://jmlr.org/papers/volume26/25-0657/25-0657.pdf",
+      "modifications": [
+        "excerpt only: selected line spans of text converted from the published PDF by an OCR pipeline (MinerU), with the OCR's LaTeX spacing tightened; running headers and footers, including the copyright and licence lines, were dropped"
+      ],
+      "copyright_notice": "©2025 Sachin Garg, Albert S. Berahas, and Michał Dereziński.",
+      "license": "CC-BY-4.0",
+      "license_evidence": "CC-BY 4.0 line printed in the page-1 footer of the published PDF"
+    },
+    {
+      "key": "v27-22-1194",
+      "used_by": [
+        "fl_verification"
+      ],
+      "title": "A Reinforcement Learning Approach in Multi-Phase Second-Price Auction Design",
+      "authors": "Rui Ai, Boxiang Lyu, Zhaoran Wang, Zhuoran Yang, Michael I. Jordan",
+      "journal": "Journal of Machine Learning Research",
+      "volume": "27",
+      "issue": "14",
+      "pages": "1-55",
+      "year": "2026",
+      "url": "https://jmlr.org/papers/v27/22-1194.html",
+      "pdf_url": "https://jmlr.org/papers/volume27/22-1194/22-1194.pdf",
+      "modifications": [
+        "excerpt only: selected line spans of text converted from the published PDF by an OCR pipeline (MinerU), with the OCR's LaTeX spacing tightened; running headers and footers, including the copyright and licence lines, were dropped",
+        "1 correction(s) applied to the text as printed, 1 of them to typographical errors in the published paper rather than to OCR damage"
+      ],
+      "copyright_notice": "©2026 Ai, Lyu, Wang, Yang, and Jordan.",
+      "license": "CC-BY-4.0",
+      "license_evidence": "CC-BY 4.0 line printed in the page-1 footer of the published PDF"
+    },
+    {
+      "key": "v27-24-0456",
+      "used_by": [
+        "fl_verification"
+      ],
+      "title": "Persistence Diagrams Estimation of Multivariate Piecewise Hölder-continuous Signals",
+      "authors": "Hugo Henneuse",
+      "journal": "Journal of Machine Learning Research",
+      "volume": "27",
+      "issue": "31",
+      "pages": "1-55",
+      "year": "2026",
+      "url": "https://jmlr.org/papers/v27/24-0456.html",
+      "pdf_url": "https://jmlr.org/papers/volume27/24-0456/24-0456.pdf",
+      "modifications": [
+        "excerpt only: selected line spans of text converted from the published PDF by an OCR pipeline (MinerU), with the OCR's LaTeX spacing tightened; running headers and footers, including the copyright and licence lines, were dropped",
+        "text the OCR garbled or lost was rebuilt by comparison with the published PDF, including Diagram (17), re-typeset as a LaTeX array",
+        "1 correction(s) applied to the text as printed"
+      ],
+      "copyright_notice": "©2026 Hugo Henneuse.",
+      "license": "CC-BY-4.0",
+      "license_evidence": "CC-BY 4.0 line printed in the page-1 footer of the published PDF"
+    },
+    {
+      "key": "v27-24-0771",
+      "used_by": [
+        "fl_verification"
+      ],
+      "title": "Nonparametric Partial Disentanglement via Mechanism Sparsity: Sparse Actions, Interventions and Sparse Temporal Dependencies",
+      "authors": "Sébastien Lachapelle, Pau Rodríguez López, Yash Sharma, Katie Everett, Rémi Le Priol, Alexandre Lacoste, Simon Lacoste-Julien",
+      "journal": "Journal of Machine Learning Research",
+      "volume": "27",
+      "issue": "71",
+      "pages": "1-90",
+      "year": "2026",
+      "url": "https://jmlr.org/papers/v27/24-0771.html",
+      "pdf_url": "https://jmlr.org/papers/volume27/24-0771/24-0771.pdf",
+      "modifications": [
+        "excerpt only: selected line spans of text converted from the published PDF by an OCR pipeline (MinerU), with the OCR's LaTeX spacing tightened; running headers and footers, including the copyright and licence lines, were dropped",
+        "text the OCR garbled was rebuilt by comparison with the published PDF",
+        "3 correction(s) applied to the text as printed, 3 of them to typographical errors in the published paper rather than to OCR damage"
+      ],
+      "copyright_notice": "©2026 Sébastien Lachapelle, Pau Rodrı́guez López, Yash Sharma, Katie Everett, Rémi Le Priol, Alexandre Lacoste, Simon.",
+      "license": "CC-BY-4.0",
+      "license_evidence": "CC-BY 4.0 line printed in the page-1 footer of the published PDF"
+    },
+    {
+      "key": "v27-24-1484",
+      "used_by": [
+        "fl_verification"
+      ],
+      "title": "Asymptotics of Stochastic Gradient Descent with Dropout Regularization in Linear Models",
+      "authors": "Jiaqi Li, Johannes Schmidt-Hieber, Wei Biao Wu",
+      "journal": "Journal of Machine Learning Research",
+      "volume": "27",
+      "issue": "83",
+      "pages": "1-78",
+      "year": "2026",
+      "url": "https://jmlr.org/papers/v27/24-1484.html",
+      "pdf_url": "https://jmlr.org/papers/volume27/24-1484/24-1484.pdf",
+      "modifications": [
+        "excerpt only: selected line spans of text converted from the published PDF by an OCR pipeline (MinerU), with the OCR's LaTeX spacing tightened; running headers and footers, including the copyright and licence lines, were dropped"
+      ],
+      "copyright_notice": "©2026 Jiaqi Li, Johannes Schmidt-Hieber, Wei Biao Wu.",
+      "license": "CC-BY-4.0",
+      "license_evidence": "CC-BY 4.0 line printed in the page-1 footer of the published PDF"
+    },
+    {
+      "key": "v27-24-1538",
+      "used_by": [
+        "fl_verification"
+      ],
+      "title": "Almost Sure Convergence of Linear Temporal Difference Learning with Arbitrary Features",
+      "authors": "Jiuqi Wang, Shangtong Zhang",
+      "journal": "Journal of Machine Learning Research",
+      "volume": "27",
+      "issue": "84",
+      "pages": "1-36",
+      "year": "2026",
+      "url": "https://jmlr.org/papers/v27/24-1538.html",
+      "pdf_url": "https://jmlr.org/papers/volume27/24-1538/24-1538.pdf",
+      "modifications": [
+        "excerpt only: selected line spans of text converted from the published PDF by an OCR pipeline (MinerU), with the OCR's LaTeX spacing tightened; running headers and footers, including the copyright and licence lines, were dropped"
+      ],
+      "copyright_notice": "©2026 Jiuqi Wang, Shangtong Zhang.",
+      "license": "CC-BY-4.0",
+      "license_evidence": "CC-BY 4.0 line printed in the page-1 footer of the published PDF"
+    },
+    {
+      "key": "v27-24-1748",
+      "used_by": [
+        "fl_verification"
+      ],
+      "title": "On the Relevance of Byzantine Robust Optimization Against Data Poisoning",
+      "authors": "Sadegh Farhadkhani, Rachid Guerraoui, Nirupam Gupta, Rafael Pinot",
+      "journal": "Journal of Machine Learning Research",
+      "volume": "27",
+      "issue": "87",
+      "pages": "1-44",
+      "year": "2026",
+      "url": "https://jmlr.org/papers/v27/24-1748.html",
+      "pdf_url": "https://jmlr.org/papers/volume27/24-1748/24-1748.pdf",
+      "modifications": [
+        "excerpt only: selected line spans of text converted from the published PDF by an OCR pipeline (MinerU), with the OCR's LaTeX spacing tightened; running headers and footers, including the copyright and licence lines, were dropped",
+        "1 correction(s) applied to the text as printed, 1 of them to typographical errors in the published paper rather than to OCR damage"
+      ],
+      "copyright_notice": "©2026 Sadegh Farhadkhani, Rachid Guerraoui, Nirupam Gupta and Rafael Pinot.",
+      "license": "CC-BY-4.0",
+      "license_evidence": "CC-BY 4.0 line printed in the page-1 footer of the published PDF"
+    },
+    {
+      "key": "v27-25-0012",
+      "used_by": [
+        "fl_verification"
+      ],
+      "title": "Guaranteed Nonconvex Low-Rank Tensor Estimation via Scaled Gradient Descent",
+      "authors": "Tong Wu",
+      "journal": "Journal of Machine Learning Research",
+      "volume": "27",
+      "issue": "9",
+      "pages": "1-90",
+      "year": "2026",
+      "url": "https://jmlr.org/papers/v27/25-0012.html",
+      "pdf_url": "https://jmlr.org/papers/volume27/25-0012/25-0012.pdf",
+      "modifications": [
+        "excerpt only: selected line spans of text converted from the published PDF by an OCR pipeline (MinerU), with the OCR's LaTeX spacing tightened; running headers and footers, including the copyright and licence lines, were dropped",
+        "text the OCR garbled was rebuilt by comparison with the published PDF"
+      ],
+      "copyright_notice": "©2026 Tong Wu.",
+      "license": "CC-BY-4.0",
+      "license_evidence": "CC-BY 4.0 line printed in the page-1 footer of the published PDF"
+    },
+    {
+      "key": "v27-25-0376",
+      "used_by": [
+        "fl_verification"
+      ],
+      "title": "A Data-Augmented Contrastive Learning Approach to Nonparametric Density Estimation",
+      "authors": "Chenghao Li, Yuanyuan Lin",
+      "journal": "Journal of Machine Learning Research",
+      "volume": "27",
+      "issue": "10",
+      "pages": "1-47",
+      "year": "2026",
+      "url": "https://jmlr.org/papers/v27/25-0376.html",
+      "pdf_url": "https://jmlr.org/papers/volume27/25-0376/25-0376.pdf",
+      "modifications": [
+        "excerpt only: selected line spans of text converted from the published PDF by an OCR pipeline (MinerU), with the OCR's LaTeX spacing tightened; running headers and footers, including the copyright and licence lines, were dropped",
+        "2 correction(s) applied to the text as printed, 2 of them to typographical errors in the published paper rather than to OCR damage"
+      ],
+      "copyright_notice": "©2026 Chenghao Li and Yuanyuan Lin.",
+      "license": "CC-BY-4.0",
+      "license_evidence": "CC-BY 4.0 line printed in the page-1 footer of the published PDF"
+    },
+    {
+      "key": "v27-25-0989",
+      "used_by": [
+        "fl_verification"
+      ],
+      "title": "Online Bernstein-von Mises theorem",
+      "authors": "Jeyong Lee, Junhyeok Choi, Minwoo Chae",
+      "journal": "Journal of Machine Learning Research",
+      "volume": "27",
+      "issue": "49",
+      "pages": "1-124",
+      "year": "2026",
+      "url": "https://jmlr.org/papers/v27/25-0989.html",
+      "pdf_url": "https://jmlr.org/papers/volume27/25-0989/25-0989.pdf",
+      "modifications": [
+        "excerpt only: selected line spans of text converted from the published PDF by an OCR pipeline (MinerU), with the OCR's LaTeX spacing tightened; running headers and footers, including the copyright and licence lines, were dropped"
+      ],
+      "copyright_notice": "©2026 Jeyong Lee, Junhyeok Choi and Minwoo Chae.",
+      "license": "CC-BY-4.0",
+      "license_evidence": "CC-BY 4.0 line printed in the page-1 footer of the published PDF"
+    },
+    {
+      "key": "v27-25-1449",
+      "used_by": [
+        "fl_verification"
+      ],
+      "title": "Finite-Time Decoupled Convergence in Nonlinear Two-Time-Scale Stochastic Approximation",
+      "authors": "Yuze Han, Xiang Li, Zhihua Zhang",
+      "journal": "Journal of Machine Learning Research",
+      "volume": "27",
+      "issue": "112",
+      "pages": "1-69",
+      "year": "2026",
+      "url": "https://jmlr.org/papers/v27/25-1449.html",
+      "pdf_url": "https://jmlr.org/papers/volume27/25-1449/25-1449.pdf",
+      "modifications": [
+        "excerpt only: selected line spans of text converted from the published PDF by an OCR pipeline (MinerU), with the OCR's LaTeX spacing tightened; running headers and footers, including the copyright and licence lines, were dropped",
+        "text the OCR garbled was rebuilt by comparison with the published PDF",
+        "6 correction(s) applied to the text as printed, 6 of them to typographical errors in the published paper rather than to OCR damage"
+      ],
+      "copyright_notice": "©2026 Yuze Han, Xiang Li, and Zhihua Zhang.",
+      "license": "CC-BY-4.0",
+      "license_evidence": "CC-BY 4.0 line printed in the page-1 footer of the published PDF"
+    },
+    {
+      "key": "v27-25-2383",
+      "used_by": [
+        "fl_verification"
+      ],
+      "title": "The Sample Complexity of Parameter-Free Stochastic Convex Optimization",
+      "authors": "Jared Lawrence, Ari Kalinsky, Hannah Bradfield, Yair Carmon, Oliver Hinder",
+      "journal": "Journal of Machine Learning Research",
+      "volume": "27",
+      "issue": "133",
+      "pages": "1-46",
+      "year": "2026",
+      "url": "https://jmlr.org/papers/v27/25-2383.html",
+      "pdf_url": "https://jmlr.org/papers/volume27/25-2383/25-2383.pdf",
+      "modifications": [
+        "excerpt only: selected line spans of text converted from the published PDF by an OCR pipeline (MinerU), with the OCR's LaTeX spacing tightened; running headers and footers, including the copyright and licence lines, were dropped"
+      ],
+      "copyright_notice": "©2026 Jared Lawrence, Ari Kalinsky, Hannah Bradfield, Yair Carmon, and Oliver Hinder.",
+      "license": "CC-BY-4.0",
+      "license_evidence": "CC-BY 4.0 line printed in the page-1 footer of the published PDF"
+    },
+    {
+      "key": "v3-bartlett02a",
+      "used_by": [
+        "forward_construction"
+      ],
+      "title": "Rademacher and Gaussian Complexities: Risk Bounds and Structural Results",
+      "authors": "Peter L. Bartlett, Shahar Mendelson",
+      "journal": "Journal of Machine Learning Research",
+      "volume": "3",
+      "issue": "Nov",
+      "pages": "463-482",
+      "year": "2002",
+      "url": "https://jmlr.org/papers/v3/bartlett02a.html",
+      "pdf_url": "https://jmlr.org/papers/volume3/bartlett02a/bartlett02a.pdf",
+      "modifications": [
+        "excerpt only: selected passages of text converted from the published PDF by an OCR pipeline (MinerU); running headers and footers, including the copyright and licence lines, were dropped",
+        "the statements, proofs and context in `targets`, `nl_proof` and `context` are rewritten in our own words with the mathematics unchanged",
+        "a statement may carry a minimal edit so that it says what the Lean target says"
+      ],
+      "copyright_notice": null,
+      "license": "none-stated",
+      "license_evidence": "page-1 footer of the published PDF states copyright only, with no licence line"
+    },
+    {
+      "key": "v3-brafman02a",
+      "used_by": [
+        "forward_construction"
+      ],
+      "title": "R-MAX - A General Polynomial Time Algorithm for Near-Optimal Reinforcement Learning",
+      "authors": "Ronen I. Brafman, Moshe Tennenholtz",
+      "journal": "Journal of Machine Learning Research",
+      "volume": "3",
+      "issue": "Oct",
+      "pages": "213-231",
+      "year": "2002",
+      "url": "https://jmlr.org/papers/v3/brafman02a.html",
+      "pdf_url": "https://jmlr.org/papers/volume3/brafman02a/brafman02a.pdf",
+      "modifications": [
+        "excerpt only: selected passages of text converted from the published PDF by an OCR pipeline (MinerU); running headers and footers, including the copyright and licence lines, were dropped",
+        "the statements, proofs and context in `targets`, `nl_proof` and `context` are rewritten in our own words with the mathematics unchanged",
+        "a statement may carry a minimal edit so that it says what the Lean target says"
+      ],
+      "copyright_notice": "©2002 Ronen I. Brafman and Moshe Tennenholtz.",
+      "license": "none-stated",
+      "license_evidence": "page-1 footer of the published PDF states copyright only, with no licence line"
+    },
+    {
+      "key": "v7-evendar06a",
+      "used_by": [
+        "forward_construction"
+      ],
+      "title": "Action Elimination and Stopping Conditions for the Multi-Armed Bandit and Reinforcement Learning Problems",
+      "authors": "Eyal Even-Dar, Shie Mannor, Yishay Mansour",
+      "journal": "Journal of Machine Learning Research",
+      "volume": "7",
+      "issue": "39",
+      "pages": "1079-1105",
+      "year": "2006",
+      "url": "https://jmlr.org/papers/v7/evendar06a.html",
+      "pdf_url": "https://jmlr.org/papers/volume7/evendar06a/evendar06a.pdf",
+      "modifications": [
+        "excerpt only: selected passages of text converted from the published PDF by an OCR pipeline (MinerU); running headers and footers, including the copyright and licence lines, were dropped",
+        "the statements, proofs and context in `targets`, `nl_proof` and `context` are rewritten in our own words with the mathematics unchanged",
+        "a statement may carry a minimal edit so that it says what the Lean target says"
+      ],
+      "copyright_notice": "©2006 Eyal Even-Dar, Shie Mannor and Yishay Mansour.",
+      "license": "none-stated",
+      "license_evidence": "page-1 footer of the published PDF states copyright only, with no licence line"
+    },
+    {
+      "key": "v10-duchi09a",
+      "used_by": [
+        "forward_construction"
+      ],
+      "title": "Efficient Online and Batch Learning Using Forward Backward Splitting",
+      "authors": "John Duchi, Yoram Singer",
+      "journal": "Journal of Machine Learning Research",
+      "volume": "10",
+      "issue": "99",
+      "pages": "2899-2934",
+      "year": "2009",
+      "url": "https://jmlr.org/papers/v10/duchi09a.html",
+      "pdf_url": "https://jmlr.org/papers/volume10/duchi09a/duchi09a.pdf",
+      "modifications": [
+        "excerpt only: selected passages of text converted from the published PDF by an OCR pipeline (MinerU); running headers and footers, including the copyright and licence lines, were dropped",
+        "the statements, proofs and context in `targets`, `nl_proof` and `context` are rewritten in our own words with the mathematics unchanged",
+        "a statement may carry a minimal edit so that it says what the Lean target says"
+      ],
+      "copyright_notice": "©2009 John Duchi and Yoram Singer.",
+      "license": "none-stated",
+      "license_evidence": "page-1 footer of the published PDF states copyright only, with no licence line"
+    },
+    {
+      "key": "v23-20-1353",
+      "used_by": [
+        "forward_construction"
+      ],
+      "title": "Improved Generalization Bounds for Adversarially Robust Learning",
+      "authors": "Idan Attias, Aryeh Kontorovich, Yishay Mansour",
+      "journal": "Journal of Machine Learning Research",
+      "volume": "23",
+      "issue": "175",
+      "pages": "1-31",
+      "year": "2022",
+      "url": "https://jmlr.org/papers/v23/20-1353.html",
+      "pdf_url": "https://jmlr.org/papers/volume23/20-1353/20-1353.pdf",
+      "modifications": [
+        "excerpt only: selected line spans of text converted from the published PDF by an OCR pipeline (MinerU) — the target statements (`targets`), their proofs (`nl_proof`) and the setup, definitions and results they use (`context`); running headers and footers, including the copyright and licence lines, were dropped",
+        "the OCR's LaTeX spacing was tightened, and OCR damage was repaired by comparison with the published PDF, while misprints in the published text are kept",
+        "a statement may carry a minimal edit so that it says what the Lean target says"
+      ],
+      "copyright_notice": "©2022 Idan Attias, Aryeh Kontorovich, and Yishay Mansour.",
+      "license": "CC-BY-4.0",
+      "license_evidence": "CC-BY 4.0 line printed in the page-1 footer of the published PDF"
+    },
+    {
+      "key": "v23-20-411",
+      "used_by": [
+        "forward_construction"
+      ],
+      "title": "No Weighted-Regret Learning in Adversarial Bandits with Delays",
+      "authors": "Ilai Bistritz, Zhengyuan Zhou, Xi Chen, Nicholas Bambos, Jose Blanchet",
+      "journal": "Journal of Machine Learning Research",
+      "volume": "23",
+      "issue": "139",
+      "pages": "1-43",
+      "year": "2022",
+      "url": "https://jmlr.org/papers/v23/20-411.html",
+      "pdf_url": "https://jmlr.org/papers/volume23/20-411/20-411.pdf",
+      "modifications": [
+        "excerpt only: selected line spans of text converted from the published PDF by an OCR pipeline (MinerU) — the target statements (`targets`), their proofs (`nl_proof`) and the setup, definitions and results they use (`context`); running headers and footers, including the copyright and licence lines, were dropped",
+        "the OCR's LaTeX spacing was tightened, and OCR damage was repaired by comparison with the published PDF, while misprints in the published text are kept",
+        "a statement may carry a minimal edit so that it says what the Lean target says"
+      ],
+      "copyright_notice": "©2022 Ilai Bistritz, Zhengyuan Zhou, Xi Chen, Nicholas Bambos, Jose Blanchet.",
+      "license": "CC-BY-4.0",
+      "license_evidence": "CC-BY 4.0 line printed in the page-1 footer of the published PDF"
+    },
+    {
+      "key": "v23-21-0152",
+      "used_by": [
+        "forward_construction"
+      ],
+      "title": "Mitigating the Effects of Non-Identifiability on Inference for Bayesian Neural Networks with Latent Variables",
+      "authors": "Yaniv Yacoby, Weiwei Pan, Finale Doshi-Velez",
+      "journal": "Journal of Machine Learning Research",
+      "volume": "23",
+      "issue": "244",
+      "pages": "1-54",
+      "year": "2022",
+      "url": "https://jmlr.org/papers/v23/21-0152.html",
+      "pdf_url": "https://jmlr.org/papers/volume23/21-0152/21-0152.pdf",
+      "modifications": [
+        "excerpt only: selected line spans of text converted from the published PDF by an OCR pipeline (MinerU) — the target statements (`targets`), their proofs (`nl_proof`) and the setup, definitions and results they use (`context`); running headers and footers, including the copyright and licence lines, were dropped",
+        "the OCR's LaTeX spacing was tightened, and OCR damage was repaired by comparison with the published PDF, while misprints in the published text are kept",
+        "a statement may carry a minimal edit so that it says what the Lean target says",
+        "the statement of the concentration step (where Cantelli's inequality is applied in the proofs of Theorems 1 and 2, Appendix B.1/B.2) is written in our own words, as the paper does not state it as a result"
+      ],
+      "copyright_notice": "©2022 Yaniv Yacoby, Weiwei Pan, Finale Doshi-Velez.",
+      "license": "CC-BY-4.0",
+      "license_evidence": "CC-BY 4.0 line printed in the page-1 footer of the published PDF"
+    },
+    {
+      "key": "v23-21-1027",
+      "used_by": [
+        "forward_construction"
+      ],
+      "title": "Online Mirror Descent and Dual Averaging: Keeping Pace in the Dynamic Case",
+      "authors": "Huang Fang, Nicholas J. A. Harvey, Victor S. Portella, Michael P. Friedlander",
+      "journal": "Journal of Machine Learning Research",
+      "volume": "23",
+      "issue": "121",
+      "pages": "1-38",
+      "year": "2022",
+      "url": "https://jmlr.org/papers/v23/21-1027.html",
+      "pdf_url": "https://jmlr.org/papers/volume23/21-1027/21-1027.pdf",
+      "modifications": [
+        "excerpt only: selected line spans of text converted from the published PDF by an OCR pipeline (MinerU) — the target statements (`targets`), their proofs (`nl_proof`) and the setup, definitions and results they use (`context`); running headers and footers, including the copyright and licence lines, were dropped",
+        "the OCR's LaTeX spacing was tightened, and OCR damage was repaired by comparison with the published PDF, while misprints in the published text are kept",
+        "a statement may carry a minimal edit so that it says what the Lean target says"
+      ],
+      "copyright_notice": "©2022 Huang Fang, Nicholas J. A. Harvey, Victor S. Portella and Michael P. Friedlander.",
+      "license": "CC-BY-4.0",
+      "license_evidence": "CC-BY 4.0 line printed in the page-1 footer of the published PDF"
+    },
+    {
+      "key": "v24-19-980",
+      "used_by": [
+        "forward_construction"
+      ],
+      "title": "Reinforcement Learning for Joint Optimization of Multiple Rewards",
+      "authors": "Mridul Agarwal, Vaneet Aggarwal",
+      "journal": "Journal of Machine Learning Research",
+      "volume": "24",
+      "issue": "49",
+      "pages": "1-41",
+      "year": "2023",
+      "url": "https://jmlr.org/papers/v24/19-980.html",
+      "pdf_url": "https://jmlr.org/papers/volume24/19-980/19-980.pdf",
+      "modifications": [
+        "excerpt only: selected line spans of text converted from the published PDF by an OCR pipeline (MinerU) — the target statements (`targets`), their proofs (`nl_proof`) and the setup, definitions and results they use (`context`); running headers and footers, including the copyright and licence lines, were dropped",
+        "the OCR's LaTeX spacing was tightened, and OCR damage was repaired by comparison with the published PDF, while misprints in the published text are kept",
+        "a statement may carry a minimal edit so that it says what the Lean target says"
+      ],
+      "copyright_notice": "©2023 Mridul Agarwal, Vaneet Aggarwal.",
+      "license": "CC-BY-4.0",
+      "license_evidence": "CC-BY 4.0 line printed in the page-1 footer of the published PDF"
+    },
+    {
+      "key": "v24-21-1250",
+      "used_by": [
+        "forward_construction"
+      ],
+      "title": "PAC-learning for Strategic Classification",
+      "authors": "Ravi Sundaram, Anil Vullikanti, Haifeng Xu, Fan Yao",
+      "journal": "Journal of Machine Learning Research",
+      "volume": "24",
+      "issue": "192",
+      "pages": "1-38",
+      "year": "2023",
+      "url": "https://jmlr.org/papers/v24/21-1250.html",
+      "pdf_url": "https://jmlr.org/papers/volume24/21-1250/21-1250.pdf",
+      "modifications": [
+        "excerpt only: selected line spans of text converted from the published PDF by an OCR pipeline (MinerU) — the target statements (`targets`), their proofs (`nl_proof`) and the setup, definitions and results they use (`context`); running headers and footers, including the copyright and licence lines, were dropped",
+        "the OCR's LaTeX spacing was tightened, and OCR damage was repaired by comparison with the published PDF, while misprints in the published text are kept",
+        "a statement may carry a minimal edit so that it says what the Lean target says",
+        "under Lemma 12, `nl_proof` says that the paper gives no proof of it"
+      ],
+      "copyright_notice": "©2023 Ravi Sundaram, Anil Vullikanti, Haifeng Xu and Fan Yao.",
+      "license": "CC-BY-4.0",
+      "license_evidence": "CC-BY 4.0 line printed in the page-1 footer of the published PDF"
+    },
+    {
+      "key": "v24-22-0339",
+      "used_by": [
+        "forward_construction"
+      ],
+      "title": "Minimax Risk Classifiers with 0-1 Loss",
+      "authors": "Santiago Mazuelas, Mauricio Romero, Peter Grunwald",
+      "journal": "Journal of Machine Learning Research",
+      "volume": "24",
+      "issue": "208",
+      "pages": "1-48",
+      "year": "2023",
+      "url": "https://jmlr.org/papers/v24/22-0339.html",
+      "pdf_url": "https://jmlr.org/papers/volume24/22-0339/22-0339.pdf",
+      "modifications": [
+        "excerpt only: selected line spans of text converted from the published PDF by an OCR pipeline (MinerU) — the target statements (`targets`), their proofs (`nl_proof`) and the setup, definitions and results they use (`context`); running headers and footers, including the copyright and licence lines, were dropped",
+        "the OCR's LaTeX spacing was tightened, and OCR damage was repaired by comparison with the published PDF, while misprints in the published text are kept",
+        "a statement may carry a minimal edit so that it says what the Lean target says"
+      ],
+      "copyright_notice": "©2023 Santiago Mazuelas, Mauricio Romero, and Peter Grünwald.",
+      "license": "CC-BY-4.0",
+      "license_evidence": "CC-BY 4.0 line printed in the page-1 footer of the published PDF"
+    },
+    {
+      "key": "v24-22-0522",
+      "used_by": [
+        "forward_construction"
+      ],
+      "title": "Restarted Nonconvex Accelerated Gradient Descent: No More Polylogarithmic Factor in the O(epsilon^(-7/4)) Complexity",
+      "authors": "Huan Li, Zhouchen Lin",
+      "journal": "Journal of Machine Learning Research",
+      "volume": "24",
+      "issue": "157",
+      "pages": "1-37",
+      "year": "2023",
+      "url": "https://jmlr.org/papers/v24/22-0522.html",
+      "pdf_url": "https://jmlr.org/papers/volume24/22-0522/22-0522.pdf",
+      "modifications": [
+        "excerpt only: selected line spans of text converted from the published PDF by an OCR pipeline (MinerU) — the target statements (`targets`), their proofs (`nl_proof`) and the setup, definitions and results they use (`context`); running headers and footers, including the copyright and licence lines, were dropped",
+        "the OCR's LaTeX spacing was tightened, and OCR damage was repaired by comparison with the published PDF, while misprints in the published text are kept",
+        "a statement may carry a minimal edit so that it says what the Lean target says"
+      ],
+      "copyright_notice": "©2023 Huan Li and Zhouchen Lin.",
+      "license": "CC-BY-4.0",
+      "license_evidence": "CC-BY 4.0 line printed in the page-1 footer of the published PDF"
+    },
+    {
+      "key": "v24-22-0747",
+      "used_by": [
+        "forward_construction"
+      ],
+      "title": "Erratum: Risk Bounds for the Majority Vote: From a PAC-Bayesian Analysis to a Learning Algorithm",
+      "authors": "Louis-Philippe Vignault, Audrey Durand, Pascal Germain",
+      "journal": "Journal of Machine Learning Research",
+      "volume": "24",
+      "issue": "294",
+      "pages": "1-13",
+      "year": "2023",
+      "url": "https://jmlr.org/papers/v24/22-0747.html",
+      "pdf_url": "https://jmlr.org/papers/volume24/22-0747/22-0747.pdf",
+      "modifications": [
+        "excerpt only: selected line spans of text converted from the published PDF by an OCR pipeline (MinerU) — the target statements (`targets`), their proofs (`nl_proof`) and the setup, definitions and results they use (`context`); running headers and footers, including the copyright and licence lines, were dropped",
+        "the OCR's LaTeX spacing was tightened, and OCR damage was repaired by comparison with the published PDF, while misprints in the published text are kept",
+        "a statement may carry a minimal edit so that it says what the Lean target says",
+        "the statement of the counter-example to Corollary 2 (Section 4) is written in our own words, as the paper sketches it without stating it as a result"
+      ],
+      "copyright_notice": "©2023 Louis-Philippe Vignault, Audrey Durand, Pascal Germain.",
+      "license": "CC-BY-4.0",
+      "license_evidence": "CC-BY 4.0 line printed in the page-1 footer of the published PDF"
+    },
+    {
+      "key": "v24-22-0881",
+      "used_by": [
+        "forward_construction"
+      ],
+      "title": "Sample Complexity for Distributionally Robust Learning under chi-square divergence",
+      "authors": "Zhengyu Zhou, Weiwei Liu",
+      "journal": "Journal of Machine Learning Research",
+      "volume": "24",
+      "issue": "230",
+      "pages": "1-27",
+      "year": "2023",
+      "url": "https://jmlr.org/papers/v24/22-0881.html",
+      "pdf_url": "https://jmlr.org/papers/volume24/22-0881/22-0881.pdf",
+      "modifications": [
+        "excerpt only: selected line spans of text converted from the published PDF by an OCR pipeline (MinerU) — the target statements (`targets`), their proofs (`nl_proof`) and the setup, definitions and results they use (`context`); running headers and footers, including the copyright and licence lines, were dropped",
+        "the OCR's LaTeX spacing was tightened, and OCR damage was repaired by comparison with the published PDF, while misprints in the published text are kept",
+        "a statement may carry a minimal edit so that it says what the Lean target says"
+      ],
+      "copyright_notice": "©2023 Zhengyu Zhou and Weiwei Liu.",
+      "license": "CC-BY-4.0",
+      "license_evidence": "CC-BY 4.0 line printed in the page-1 footer of the published PDF"
+    },
+    {
+      "key": "v24-22-1104",
+      "used_by": [
+        "forward_construction"
+      ],
+      "title": "Leaky Hockey Stick Loss: The First Negatively Divergent Margin-based Loss Function for Classification",
+      "authors": "Oh-Ran Kwon, Hui Zou",
+      "journal": "Journal of Machine Learning Research",
+      "volume": "24",
+      "issue": "239",
+      "pages": "1-40",
+      "year": "2023",
+      "url": "https://jmlr.org/papers/v24/22-1104.html",
+      "pdf_url": "https://jmlr.org/papers/volume24/22-1104/22-1104.pdf",
+      "modifications": [
+        "excerpt only: selected line spans of text converted from the published PDF by an OCR pipeline (MinerU) — the target statements (`targets`), their proofs (`nl_proof`) and the setup, definitions and results they use (`context`); running headers and footers, including the copyright and licence lines, were dropped",
+        "the OCR's LaTeX spacing was tightened, and OCR damage was repaired by comparison with the published PDF, while misprints in the published text are kept",
+        "a statement may carry a minimal edit so that it says what the Lean target says"
+      ],
+      "copyright_notice": "©2023 Oh-Ran Kwon and Hui Zou.",
+      "license": "CC-BY-4.0",
+      "license_evidence": "CC-BY 4.0 line printed in the page-1 footer of the published PDF"
+    },
+    {
+      "key": "v24-22-1149",
+      "used_by": [
+        "forward_construction"
+      ],
+      "title": "Improved Powered Stochastic Optimization Algorithms for Large-Scale Machine Learning",
+      "authors": "Zhuang Yang",
+      "journal": "Journal of Machine Learning Research",
+      "volume": "24",
+      "issue": "241",
+      "pages": "1-29",
+      "year": "2023",
+      "url": "https://jmlr.org/papers/v24/22-1149.html",
+      "pdf_url": "https://jmlr.org/papers/volume24/22-1149/22-1149.pdf",
+      "modifications": [
+        "excerpt only: selected line spans of text converted from the published PDF by an OCR pipeline (MinerU) — the target statements (`targets`), their proofs (`nl_proof`) and the setup, definitions and results they use (`context`); running headers and footers, including the copyright and licence lines, were dropped",
+        "the OCR's LaTeX spacing was tightened, and OCR damage was repaired by comparison with the published PDF, while misprints in the published text are kept",
+        "a statement may carry a minimal edit so that it says what the Lean target says",
+        "the statement of the inequality of eqs. (14)-(15) is written in our own words, as the paper derives it only as a step inside the proof of Theorem 1"
+      ],
+      "copyright_notice": "©2023 Zhuang Yang.",
+      "license": "CC-BY-4.0",
+      "license_evidence": "CC-BY 4.0 line printed in the page-1 footer of the published PDF"
+    },
+    {
+      "key": "v24-22-1210",
+      "used_by": [
+        "forward_construction"
+      ],
+      "title": "Multi-Consensus Decentralized Accelerated Gradient Descent",
+      "authors": "Haishan Ye, Luo Luo, Ziang Zhou, Tong Zhang",
+      "journal": "Journal of Machine Learning Research",
+      "volume": "24",
+      "issue": "306",
+      "pages": "1-50",
+      "year": "2023",
+      "url": "https://jmlr.org/papers/v24/22-1210.html",
+      "pdf_url": "https://jmlr.org/papers/volume24/22-1210/22-1210.pdf",
+      "modifications": [
+        "excerpt only: selected line spans of text converted from the published PDF by an OCR pipeline (MinerU) — the target statements (`targets`), their proofs (`nl_proof`) and the setup, definitions and results they use (`context`); running headers and footers, including the copyright and licence lines, were dropped",
+        "the OCR's LaTeX spacing was tightened, and OCR damage was repaired by comparison with the published PDF, while misprints in the published text are kept",
+        "a statement may carry a minimal edit so that it says what the Lean target says"
+      ],
+      "copyright_notice": "©2023 Haishan Ye, Luo Luo, Ziang Zhou, and Tong Zhang.",
+      "license": "CC-BY-4.0",
+      "license_evidence": "CC-BY 4.0 line printed in the page-1 footer of the published PDF"
+    },
+    {
+      "key": "v25-21-0748",
+      "used_by": [
+        "forward_construction"
+      ],
+      "title": "Adaptivity and Non-stationarity: Problem-dependent Dynamic Regret for Online Convex Optimization",
+      "authors": "Peng Zhao, Yu-Jie Zhang, Lijun Zhang, Zhi-Hua Zhou",
+      "journal": "Journal of Machine Learning Research",
+      "volume": "25",
+      "issue": "98",
+      "pages": "1-52",
+      "year": "2024",
+      "url": "https://jmlr.org/papers/v25/21-0748.html",
+      "pdf_url": "https://jmlr.org/papers/volume25/21-0748/21-0748.pdf",
+      "modifications": [
+        "excerpt only: selected line spans of text converted from the published PDF by an OCR pipeline (MinerU) — the target statements (`targets`), their proofs (`nl_proof`) and the setup, definitions and results they use (`context`); running headers and footers, including the copyright and licence lines, were dropped",
+        "the OCR's LaTeX spacing was tightened, and OCR damage was repaired by comparison with the published PDF, while misprints in the published text are kept",
+        "a statement may carry a minimal edit so that it says what the Lean target says",
+        "under Lemma 4, `nl_proof` says that the paper gives no proof of it"
+      ],
+      "copyright_notice": "©2024 Peng Zhao, Yu-Jie Zhang, Lijun Zhang, and Zhi-Hua Zhou.",
+      "license": "CC-BY-4.0",
+      "license_evidence": "CC-BY 4.0 line printed in the page-1 footer of the published PDF"
+    },
+    {
+      "key": "v25-22-1253",
+      "used_by": [
+        "forward_construction"
+      ],
+      "title": "Bridging Distributional and Risk-sensitive Reinforcement Learning with Provable Regret Bounds",
+      "authors": "Hao Liang, Zhi-Quan Luo",
+      "journal": "Journal of Machine Learning Research",
+      "volume": "25",
+      "issue": "221",
+      "pages": "1-56",
+      "year": "2024",
+      "url": "https://jmlr.org/papers/v25/22-1253.html",
+      "pdf_url": "https://jmlr.org/papers/volume25/22-1253/22-1253.pdf",
+      "modifications": [
+        "excerpt only: selected line spans of text converted from the published PDF by an OCR pipeline (MinerU) — the target statements (`targets`), their proofs (`nl_proof`) and the setup, definitions and results they use (`context`); running headers and footers, including the copyright and licence lines, were dropped",
+        "the OCR's LaTeX spacing was tightened, and OCR damage was repaired by comparison with the published PDF, while misprints in the published text are kept",
+        "a statement may carry a minimal edit so that it says what the Lean target says"
+      ],
+      "copyright_notice": "©2024 Hao Liang and Zhi-Quan Luo.",
+      "license": "CC-BY-4.0",
+      "license_evidence": "CC-BY 4.0 line printed in the page-1 footer of the published PDF"
+    },
+    {
+      "key": "v25-23-0422",
+      "used_by": [
+        "forward_construction"
+      ],
+      "title": "Generalization and Stability of Interpolating Neural Networks with Minimal Width",
+      "authors": "Hossein Taheri, Christos Thrampoulidis",
+      "journal": "Journal of Machine Learning Research",
+      "volume": "25",
+      "issue": "156",
+      "pages": "1-41",
+      "year": "2024",
+      "url": "https://jmlr.org/papers/v25/23-0422.html",
+      "pdf_url": "https://jmlr.org/papers/volume25/23-0422/23-0422.pdf",
+      "modifications": [
+        "excerpt only: selected line spans of text converted from the published PDF by an OCR pipeline (MinerU) — the target statements (`targets`), their proofs (`nl_proof`) and the setup, definitions and results they use (`context`); running headers and footers, including the copyright and licence lines, were dropped",
+        "the OCR's LaTeX spacing was tightened, and OCR damage was repaired by comparison with the published PDF, while misprints in the published text are kept",
+        "a statement may carry a minimal edit so that it says what the Lean target says"
+      ],
+      "copyright_notice": "©2024 Hossein Taheri and Christos Thrampoulidis.",
+      "license": "CC-BY-4.0",
+      "license_evidence": "CC-BY 4.0 line printed in the page-1 footer of the published PDF"
+    }
+  ],
+  "iclr": [
+    {
+      "key": "HyWG0H5ge",
+      "used_by": [
+        "fl_verification"
+      ],
+      "venue": "ICLR 2017",
+      "url": "https://openreview.net/forum?id=HyWG0H5ge",
+      "license": "CC-BY-4.0",
+      "modifications": [
+        "excerpt only: selected passages of the paper's setting, results and proofs, each proof split into numbered steps",
+        "the paper's own equation and result numbers replaced by item-local numbers",
+        "OCR damage repaired by comparison with the published PDF",
+        "the defect the item contains is the paper's own, as published"
+      ]
+    },
+    {
+      "key": "HJNMYceCW",
+      "used_by": [
+        "fl_verification"
+      ],
+      "venue": "ICLR 2018",
+      "url": "https://openreview.net/forum?id=HJNMYceCW",
+      "license": "CC-BY-4.0",
+      "modifications": [
+        "excerpt only: selected passages of the paper's setting, results and proofs, each proof split into numbered steps",
+        "the paper's own equation and result numbers replaced by item-local numbers",
+        "OCR damage repaired by comparison with the published PDF",
+        "the defect the item contains is the paper's own, as published"
+      ]
+    },
+    {
+      "key": "SJTB5GZCb",
+      "used_by": [
+        "fl_verification"
+      ],
+      "venue": "ICLR 2018",
+      "url": "https://openreview.net/forum?id=SJTB5GZCb",
+      "license": "CC-BY-4.0",
+      "modifications": [
+        "excerpt only: selected passages of the paper's setting, results and proofs, each proof split into numbered steps",
+        "the paper's own equation and result numbers replaced by item-local numbers",
+        "OCR damage repaired by comparison with the published PDF",
+        "the defect the item contains is the paper's own, as published"
+      ]
+    },
+    {
+      "key": "SySpa-Z0Z",
+      "used_by": [
+        "fl_verification"
+      ],
+      "venue": "ICLR 2018",
+      "url": "https://openreview.net/forum?id=SySpa-Z0Z",
+      "license": "CC-BY-4.0",
+      "modifications": [
+        "excerpt only: selected passages of the paper's setting, results and proofs, each proof split into numbered steps",
+        "the paper's own equation and result numbers replaced by item-local numbers",
+        "OCR damage repaired by comparison with the published PDF",
+        "the defect the item contains is the paper's own, as published"
+      ]
+    },
+    {
+      "key": "rJma2bZCW",
+      "used_by": [
+        "fl_verification"
+      ],
+      "venue": "ICLR 2018",
+      "url": "https://openreview.net/forum?id=rJma2bZCW",
+      "license": "CC-BY-4.0",
+      "modifications": [
+        "excerpt only: selected passages of the paper's setting, results and proofs, each proof split into numbered steps",
+        "the paper's own equation and result numbers replaced by item-local numbers",
+        "OCR damage repaired by comparison with the published PDF",
+        "the defect the item contains is the paper's own, as published"
+      ]
+    },
+    {
+      "key": "H1xaJn05FQ",
+      "used_by": [
+        "fl_verification"
+      ],
+      "venue": "ICLR 2019",
+      "url": "https://openreview.net/forum?id=H1xaJn05FQ",
+      "license": "CC-BY-4.0",
+      "modifications": [
+        "excerpt only: selected passages of the paper's setting, results and proofs, each proof split into numbered steps",
+        "the paper's own equation and result numbers replaced by item-local numbers",
+        "OCR damage repaired by comparison with the published PDF",
+        "the defect the item contains is the paper's own, as published"
+      ]
+    },
+    {
+      "key": "H1lNb0NtPH",
+      "used_by": [
+        "fl_verification"
+      ],
+      "venue": "ICLR 2020",
+      "url": "https://openreview.net/forum?id=H1lNb0NtPH",
+      "license": "CC-BY-4.0",
+      "modifications": [
+        "excerpt only: selected passages of the paper's setting, results and proofs, each proof split into numbered steps",
+        "the paper's own equation and result numbers replaced by item-local numbers",
+        "OCR damage repaired by comparison with the published PDF",
+        "the defect the item contains is the paper's own, as published"
+      ]
+    },
+    {
+      "key": "HygegyrYwH",
+      "used_by": [
+        "fl_verification"
+      ],
+      "venue": "ICLR 2020",
+      "url": "https://openreview.net/forum?id=HygegyrYwH",
+      "license": "CC-BY-4.0",
+      "modifications": [
+        "excerpt only: selected passages of the paper's setting, results and proofs, each proof split into numbered steps",
+        "the paper's own equation and result numbers replaced by item-local numbers",
+        "OCR damage repaired by comparison with the published PDF",
+        "the defect the item contains is the paper's own, as published"
+      ]
+    },
+    {
+      "key": "SkxpDT4YvS",
+      "used_by": [
+        "fl_verification"
+      ],
+      "venue": "ICLR 2020",
+      "url": "https://openreview.net/forum?id=SkxpDT4YvS",
+      "license": "CC-BY-4.0",
+      "modifications": [
+        "excerpt only: selected passages of the paper's setting, results and proofs, each proof split into numbered steps",
+        "the paper's own equation and result numbers replaced by item-local numbers",
+        "OCR damage repaired by comparison with the published PDF",
+        "the defect the item contains is the paper's own, as published"
+      ]
+    },
+    {
+      "key": "rJlhYa4FPB",
+      "used_by": [
+        "fl_verification"
+      ],
+      "venue": "ICLR 2020",
+      "url": "https://openreview.net/forum?id=rJlhYa4FPB",
+      "license": "CC-BY-4.0",
+      "modifications": [
+        "excerpt only: selected passages of the paper's setting, results and proofs, each proof split into numbered steps",
+        "the paper's own equation and result numbers replaced by item-local numbers",
+        "OCR damage repaired by comparison with the published PDF",
+        "the defect the item contains is the paper's own, as published"
+      ]
+    },
+    {
+      "key": "FUdBF49WRV1",
+      "used_by": [
+        "fl_verification"
+      ],
+      "venue": "ICLR 2021",
+      "url": "https://openreview.net/forum?id=FUdBF49WRV1",
+      "license": "CC-BY-4.0",
+      "modifications": [
+        "excerpt only: selected passages of the paper's setting, results and proofs, each proof split into numbered steps",
+        "the paper's own equation and result numbers replaced by item-local numbers",
+        "OCR damage repaired by comparison with the published PDF",
+        "the defect the item contains is the paper's own, as published"
+      ]
+    },
+    {
+      "key": "KTS3QeWxRQq",
+      "used_by": [
+        "fl_verification"
+      ],
+      "venue": "ICLR 2021",
+      "url": "https://openreview.net/forum?id=KTS3QeWxRQq",
+      "license": "CC-BY-4.0",
+      "modifications": [
+        "excerpt only: selected passages of the paper's setting, results and proofs, each proof split into numbered steps",
+        "the paper's own equation and result numbers replaced by item-local numbers",
+        "OCR damage repaired by comparison with the published PDF",
+        "the defect the item contains is the paper's own, as published"
+      ]
+    },
+    {
+      "key": "gV3wdEOGy_V",
+      "used_by": [
+        "fl_verification"
+      ],
+      "venue": "ICLR 2021",
+      "url": "https://openreview.net/forum?id=gV3wdEOGy_V",
+      "license": "CC-BY-4.0",
+      "modifications": [
+        "excerpt only: selected passages of the paper's setting, results and proofs, each proof split into numbered steps",
+        "the paper's own equation and result numbers replaced by item-local numbers",
+        "OCR damage repaired by comparison with the published PDF",
+        "the defect the item contains is the paper's own, as published"
+      ]
+    },
+    {
+      "key": "nEMiSX_ipXr",
+      "used_by": [
+        "fl_verification"
+      ],
+      "venue": "ICLR 2021",
+      "url": "https://openreview.net/forum?id=nEMiSX_ipXr",
+      "license": "CC-BY-4.0",
+      "modifications": [
+        "excerpt only: selected passages of the paper's setting, results and proofs, each proof split into numbered steps",
+        "the paper's own equation and result numbers replaced by item-local numbers",
+        "OCR damage repaired by comparison with the published PDF",
+        "the defect the item contains is the paper's own, as published"
+      ]
+    },
+    {
+      "key": "zWy1uxjDdZJ",
+      "used_by": [
+        "fl_verification"
+      ],
+      "venue": "ICLR 2021",
+      "url": "https://openreview.net/forum?id=zWy1uxjDdZJ",
+      "license": "CC-BY-4.0",
+      "modifications": [
+        "excerpt only: selected passages of the paper's setting, results and proofs, each proof split into numbered steps",
+        "the paper's own equation and result numbers replaced by item-local numbers",
+        "OCR damage repaired by comparison with the published PDF",
+        "the defect the item contains is the paper's own, as published"
+      ]
+    },
+    {
+      "key": "HOjLHrlZhmx",
+      "used_by": [
+        "fl_verification"
+      ],
+      "venue": "ICLR 2022",
+      "url": "https://openreview.net/forum?id=HOjLHrlZhmx",
+      "license": "CC-BY-4.0",
+      "modifications": [
+        "excerpt only: selected passages of the paper's setting, results and proofs, each proof split into numbered steps",
+        "the paper's own equation and result numbers replaced by item-local numbers",
+        "OCR damage repaired by comparison with the published PDF",
+        "the defect the item contains is the paper's own, as published"
+      ]
+    },
+    {
+      "key": "J7FaSJw-xCM",
+      "used_by": [
+        "fl_verification"
+      ],
+      "venue": "ICLR 2022",
+      "url": "https://openreview.net/forum?id=J7FaSJw-xCM",
+      "license": "CC-BY-4.0",
+      "modifications": [
+        "excerpt only: selected passages of the paper's setting, results and proofs, each proof split into numbered steps",
+        "the paper's own equation and result numbers replaced by item-local numbers",
+        "OCR damage repaired by comparison with the published PDF",
+        "the defect the item contains is the paper's own, as published"
+      ]
+    },
+    {
+      "key": "uHv20yi8saL",
+      "used_by": [
+        "fl_verification"
+      ],
+      "venue": "ICLR 2022",
+      "url": "https://openreview.net/forum?id=uHv20yi8saL",
+      "license": "CC-BY-4.0",
+      "modifications": [
+        "excerpt only: selected passages of the paper's setting, results and proofs, each proof split into numbered steps",
+        "the paper's own equation and result numbers replaced by item-local numbers",
+        "OCR damage repaired by comparison with the published PDF",
+        "the defect the item contains is the paper's own, as published"
+      ]
+    },
+    {
+      "key": "0f-0I6RFAch",
+      "used_by": [
+        "fl_verification"
+      ],
+      "venue": "ICLR 2023",
+      "url": "https://openreview.net/forum?id=0f-0I6RFAch",
+      "license": "CC-BY-4.0",
+      "modifications": [
+        "excerpt only: selected passages of the paper's setting, results and proofs, each proof split into numbered steps",
+        "the paper's own equation and result numbers replaced by item-local numbers",
+        "OCR damage repaired by comparison with the published PDF",
+        "the defect the item contains is the paper's own, as published"
+      ]
+    },
+    {
+      "key": "EnrY5TOrbQ",
+      "used_by": [
+        "fl_verification"
+      ],
+      "venue": "ICLR 2023",
+      "url": "https://openreview.net/forum?id=EnrY5TOrbQ",
+      "license": "CC-BY-4.0",
+      "modifications": [
+        "excerpt only: selected passages of the paper's setting, results and proofs, each proof split into numbered steps",
+        "the paper's own equation and result numbers replaced by item-local numbers",
+        "OCR damage repaired by comparison with the published PDF",
+        "the defect the item contains is the paper's own, as published"
+      ]
+    },
+    {
+      "key": "NIzeVwedJzB",
+      "used_by": [
+        "fl_verification"
+      ],
+      "venue": "ICLR 2023",
+      "url": "https://openreview.net/forum?id=NIzeVwedJzB",
+      "license": "CC-BY-4.0",
+      "modifications": [
+        "excerpt only: selected passages of the paper's setting, results and proofs, each proof split into numbered steps",
+        "the paper's own equation and result numbers replaced by item-local numbers",
+        "OCR damage repaired by comparison with the published PDF",
+        "the defect the item contains is the paper's own, as published"
+      ]
+    },
+    {
+      "key": "Q4B6g_ubd39",
+      "used_by": [
+        "fl_verification"
+      ],
+      "venue": "ICLR 2023",
+      "url": "https://openreview.net/forum?id=Q4B6g_ubd39",
+      "license": "CC-BY-4.0",
+      "modifications": [
+        "excerpt only: selected passages of the paper's setting, results and proofs, each proof split into numbered steps",
+        "the paper's own equation and result numbers replaced by item-local numbers",
+        "OCR damage repaired by comparison with the published PDF",
+        "the defect the item contains is the paper's own, as published"
+      ]
+    },
+    {
+      "key": "Xo2E217_M4n",
+      "used_by": [
+        "fl_verification"
+      ],
+      "venue": "ICLR 2023",
+      "url": "https://openreview.net/forum?id=Xo2E217_M4n",
+      "license": "CC-BY-4.0",
+      "modifications": [
+        "excerpt only: selected passages of the paper's setting, results and proofs, each proof split into numbered steps",
+        "the paper's own equation and result numbers replaced by item-local numbers",
+        "OCR damage repaired by comparison with the published PDF",
+        "the defect the item contains is the paper's own, as published"
+      ]
+    },
+    {
+      "key": "ceOdspvoaEA",
+      "used_by": [
+        "fl_verification"
+      ],
+      "venue": "ICLR 2023",
+      "url": "https://openreview.net/forum?id=ceOdspvoaEA",
+      "license": "CC-BY-4.0",
+      "modifications": [
+        "excerpt only: selected passages of the paper's setting, results and proofs, each proof split into numbered steps",
+        "the paper's own equation and result numbers replaced by item-local numbers",
+        "OCR damage repaired by comparison with the published PDF",
+        "the defect the item contains is the paper's own, as published"
+      ]
+    },
+    {
+      "key": "BgZzJISvpY",
+      "used_by": [
+        "fl_verification"
+      ],
+      "venue": "ICLR 2024",
+      "url": "https://openreview.net/forum?id=BgZzJISvpY",
+      "license": "CC-BY-4.0",
+      "modifications": [
+        "excerpt only: selected passages of the paper's setting, results and proofs, each proof split into numbered steps",
+        "the paper's own equation and result numbers replaced by item-local numbers",
+        "OCR damage repaired by comparison with the published PDF",
+        "the defect the item contains is the paper's own, as published"
+      ]
+    },
+    {
+      "key": "J7hbPeOZ39",
+      "used_by": [
+        "fl_verification"
+      ],
+      "venue": "ICLR 2024",
+      "url": "https://openreview.net/forum?id=J7hbPeOZ39",
+      "license": "CC-BY-4.0",
+      "modifications": [
+        "excerpt only: selected passages of the paper's setting, results and proofs, each proof split into numbered steps",
+        "the paper's own equation and result numbers replaced by item-local numbers",
+        "OCR damage repaired by comparison with the published PDF",
+        "the defect the item contains is the paper's own, as published"
+      ]
+    },
+    {
+      "key": "K98byXpOpU",
+      "used_by": [
+        "fl_verification"
+      ],
+      "venue": "ICLR 2024",
+      "url": "https://openreview.net/forum?id=K98byXpOpU",
+      "license": "CC-BY-4.0",
+      "modifications": [
+        "excerpt only: selected passages of the paper's setting, results and proofs, each proof split into numbered steps",
+        "the paper's own equation and result numbers replaced by item-local numbers",
+        "OCR damage repaired by comparison with the published PDF",
+        "the defect the item contains is the paper's own, as published"
+      ]
+    },
+    {
+      "key": "KSvRZFCy7s",
+      "used_by": [
+        "fl_verification"
+      ],
+      "venue": "ICLR 2024",
+      "url": "https://openreview.net/forum?id=KSvRZFCy7s",
+      "license": "CC-BY-4.0",
+      "modifications": [
+        "excerpt only: selected passages of the paper's setting, results and proofs, each proof split into numbered steps",
+        "the paper's own equation and result numbers replaced by item-local numbers",
+        "OCR damage repaired by comparison with the published PDF",
+        "the defect the item contains is the paper's own, as published"
+      ]
+    },
+    {
+      "key": "hac6DzbMa7",
+      "used_by": [
+        "fl_verification"
+      ],
+      "venue": "ICLR 2024",
+      "url": "https://openreview.net/forum?id=hac6DzbMa7",
+      "license": "CC-BY-4.0",
+      "modifications": [
+        "excerpt only: selected passages of the paper's setting, results and proofs, each proof split into numbered steps",
+        "the paper's own equation and result numbers replaced by item-local numbers",
+        "OCR damage repaired by comparison with the published PDF",
+        "the defect the item contains is the paper's own, as published"
+      ]
+    },
+    {
+      "key": "lkIRFglmTp",
+      "used_by": [
+        "fl_verification"
+      ],
+      "venue": "ICLR 2024",
+      "url": "https://openreview.net/forum?id=lkIRFglmTp",
+      "license": "CC-BY-4.0",
+      "modifications": [
+        "excerpt only: selected passages of the paper's setting, results and proofs, each proof split into numbered steps",
+        "the paper's own equation and result numbers replaced by item-local numbers",
+        "OCR damage repaired by comparison with the published PDF",
+        "the defect the item contains is the paper's own, as published"
+      ]
+    },
+    {
+      "key": "nJnky5K944",
+      "used_by": [
+        "fl_verification"
+      ],
+      "venue": "ICLR 2024",
+      "url": "https://openreview.net/forum?id=nJnky5K944",
+      "license": "CC-BY-4.0",
+      "modifications": [
+        "excerpt only: selected passages of the paper's setting, results and proofs, each proof split into numbered steps",
+        "the paper's own equation and result numbers replaced by item-local numbers",
+        "OCR damage repaired by comparison with the published PDF",
+        "the defect the item contains is the paper's own, as published"
+      ]
+    },
+    {
+      "key": "pJBSzGmb9a",
+      "used_by": [
+        "fl_verification"
+      ],
+      "venue": "ICLR 2024",
+      "url": "https://openreview.net/forum?id=pJBSzGmb9a",
+      "license": "CC-BY-4.0",
+      "modifications": [
+        "excerpt only: selected passages of the paper's setting, results and proofs, each proof split into numbered steps",
+        "the paper's own equation and result numbers replaced by item-local numbers",
+        "OCR damage repaired by comparison with the published PDF",
+        "the defect the item contains is the paper's own, as published"
+      ]
+    },
+    {
+      "key": "wqi85OBVLE",
+      "used_by": [
+        "fl_verification"
+      ],
+      "venue": "ICLR 2024",
+      "url": "https://openreview.net/forum?id=wqi85OBVLE",
+      "license": "CC-BY-4.0",
+      "modifications": [
+        "excerpt only: selected passages of the paper's setting, results and proofs, each proof split into numbered steps",
+        "the paper's own equation and result numbers replaced by item-local numbers",
+        "OCR damage repaired by comparison with the published PDF",
+        "the defect the item contains is the paper's own, as published"
+      ]
+    },
+    {
+      "key": "5ZkuWAbxzT",
+      "used_by": [
+        "fl_verification"
+      ],
+      "venue": "ICLR 2025",
+      "url": "https://openreview.net/forum?id=5ZkuWAbxzT",
+      "license": "CC-BY-4.0",
+      "modifications": [
+        "excerpt only: selected passages of the paper's setting, results and proofs, each proof split into numbered steps",
+        "the paper's own equation and result numbers replaced by item-local numbers",
+        "OCR damage repaired by comparison with the published PDF",
+        "the defect the item contains is the paper's own, as published"
+      ]
+    },
+    {
+      "key": "8rvqpiTTFv",
+      "used_by": [
+        "fl_verification"
+      ],
+      "venue": "ICLR 2025",
+      "url": "https://openreview.net/forum?id=8rvqpiTTFv",
+      "license": "CC-BY-4.0",
+      "modifications": [
+        "excerpt only: selected passages of the paper's setting, results and proofs, each proof split into numbered steps",
+        "the paper's own equation and result numbers replaced by item-local numbers",
+        "OCR damage repaired by comparison with the published PDF",
+        "the defect the item contains is the paper's own, as published"
+      ]
+    },
+    {
+      "key": "VSKV3GykuE",
+      "used_by": [
+        "fl_verification"
+      ],
+      "venue": "ICLR 2025",
+      "url": "https://openreview.net/forum?id=VSKV3GykuE",
+      "license": "CC-BY-4.0",
+      "modifications": [
+        "excerpt only: selected passages of the paper's setting, results and proofs, each proof split into numbered steps",
+        "the paper's own equation and result numbers replaced by item-local numbers",
+        "OCR damage repaired by comparison with the published PDF",
+        "the defect the item contains is the paper's own, as published"
+      ]
+    },
+    {
+      "key": "XYK1eGjahp",
+      "used_by": [
+        "fl_verification"
+      ],
+      "venue": "ICLR 2025",
+      "url": "https://openreview.net/forum?id=XYK1eGjahp",
+      "license": "CC-BY-4.0",
+      "modifications": [
+        "excerpt only: selected passages of the paper's setting, results and proofs, each proof split into numbered steps",
+        "the paper's own equation and result numbers replaced by item-local numbers",
+        "OCR damage repaired by comparison with the published PDF",
+        "the defect the item contains is the paper's own, as published"
+      ]
+    },
+    {
+      "key": "XcAJ0qsMgh",
+      "used_by": [
+        "fl_verification"
+      ],
+      "venue": "ICLR 2025",
+      "url": "https://openreview.net/forum?id=XcAJ0qsMgh",
+      "license": "CC-BY-4.0",
+      "modifications": [
+        "excerpt only: selected passages of the paper's setting, results and proofs, each proof split into numbered steps",
+        "the paper's own equation and result numbers replaced by item-local numbers",
+        "OCR damage repaired by comparison with the published PDF",
+        "the defect the item contains is the paper's own, as published"
+      ]
+    },
+    {
+      "key": "lydPkW4lfz",
+      "used_by": [
+        "fl_verification"
+      ],
+      "venue": "ICLR 2025",
+      "url": "https://openreview.net/forum?id=lydPkW4lfz",
+      "license": "CC-BY-4.0",
+      "modifications": [
+        "excerpt only: selected passages of the paper's setting, results and proofs, each proof split into numbered steps",
+        "the paper's own equation and result numbers replaced by item-local numbers",
+        "OCR damage repaired by comparison with the published PDF",
+        "the defect the item contains is the paper's own, as published"
+      ]
+    }
+  ],
+  "lecture_sources": [
+    {
+      "key": "zhang-lt-book",
+      "title": "Mathematical Analysis of Machine Learning Algorithms",
+      "authors": "Tong Zhang",
+      "url": "https://tongzhang-ml.org/lt-book/lt-book.pdf",
+      "used_by": [
+        "forward_construction",
+        "fl_verification"
+      ],
+      "license": "publicly available or used with permission",
+      "modifications": [
+        "forward_construction: selected statements, proofs and context, each statement with a Lean formalisation and proof we wrote",
+        "fl_verification: excerpts split into numbered proof steps; 21 items across the four sources carry a defect we injected, marked by the gold fields"
+      ]
+    },
+    {
+      "key": "cs229m",
+      "title": "Lecture Notes for Machine Learning Theory (Stanford CS229M)",
+      "authors": "Tengyu Ma",
+      "url": "https://github.com/tengyuma/cs229m_notes",
+      "used_by": [
+        "forward_construction",
+        "fl_verification"
+      ],
+      "license": "publicly available or used with permission",
+      "modifications": [
+        "forward_construction: selected statements, proofs and context, each statement with a Lean formalisation and proof we wrote",
+        "fl_verification: excerpts split into numbered proof steps; 21 items across the four sources carry a defect we injected, marked by the gold fields"
+      ]
+    },
+    {
+      "key": "ee227c",
+      "title": "Convex Optimization and Approximation (UC Berkeley EE227C)",
+      "authors": "Moritz Hardt",
+      "url": "https://ee227c.github.io/notes/ee227c-notes.pdf",
+      "used_by": [
+        "forward_construction",
+        "fl_verification"
+      ],
+      "license": "publicly available or used with permission",
+      "modifications": [
+        "forward_construction: selected statements, proofs and context, each statement with a Lean formalisation and proof we wrote",
+        "fl_verification: excerpts split into numbered proof steps; 21 items across the four sources carry a defect we injected, marked by the gold fields"
+      ]
+    },
+    {
+      "key": "mit-18.465",
+      "title": "Statistical Learning Theory (MIT 18.465), MIT OpenCourseWare",
+      "authors": "Dmitry Panchenko",
+      "url": "https://ocw.mit.edu/courses/18-465-topics-in-statistics-statistical-learning-theory-spring-2007/",
+      "used_by": [
+        "forward_construction",
+        "fl_verification"
+      ],
+      "license": "publicly available or used with permission",
+      "modifications": [
+        "forward_construction: selected statements, proofs and context, each statement with a Lean formalisation and proof we wrote",
+        "fl_verification: excerpts split into numbered proof steps; 21 items across the four sources carry a defect we injected, marked by the gold fields"
+      ]
+    }
+  ]
+}

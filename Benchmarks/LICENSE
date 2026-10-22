@@ -1,0 +1,17 @@
+The benchmark data in this directory is licensed under the Creative Commons Attribution 4.0
+International licence (CC BY 4.0): https://creativecommons.org/licenses/by/4.0/legalcode
+
+This licence covers our own contributions: the Lean statements and proofs, the gold labels and
+annotations, and the text we wrote or rewrote. The data also contains third-party material, which
+stays under its authors' copyright and its own terms:
+
+- excerpts of JMLR papers (Volume 18 onward) and of ICLR papers on OpenReview, all under CC BY 4.0.
+  They are excerpts, converted from the published PDFs by OCR, with OCR damage repaired; ICLR
+  excerpts have their equation and result numbers replaced by item-local ones;
+- 4 JMLR papers before Volume 18, which state no public licence; their text is rewritten in our own
+  words, with the mathematics unchanged;
+- material from lecture notes and textbooks, each publicly available or used with the permission of
+  its authors.
+
+Per-source attribution (authors, copyright, licence, link and changes made) is in
+`../ATTRIBUTION.json`. When redistributing an excerpt, carry its attribution with it.

@@ -1,0 +1,25 @@
+# LiteLLM route for the agentic open-weights path, with OpenRouter standing in for vLLM:
+#
+#   codex CLI --(OpenAI /v1/responses)--> LiteLLM proxy --(OpenAI /v1)--> OpenRouter
+#
+# Same client side as litellm.vllm.yaml: `local:<vendor/model>` is the model, so a run here
+# exercises exactly the code path of a vLLM-served model, with no GPU. Needs
+# OPENROUTER_API_KEY in the proxy's environment.
+#
+#   PROXY_CONFIG=litellm.openrouter.yaml ./serve_proxy.sh &
+#   ../agentic/run.sh verify local:deepseek/deepseek-v4-flash --limit 3 --seed 0
+#
+# provider.sort: an open-weights model on OpenRouter is served by many providers at very
+# different speeds (deepseek-v4-flash: 18 providers, 7.6-78.8 tok/s); take the fastest.
+model_list:
+- model_name: local/*
+  litellm_params:
+    model: openrouter/*
+    api_key: os.environ/OPENROUTER_API_KEY
+    extra_body:
+      provider:
+        sort: throughput
+litellm_settings:
+  drop_params: true
+  num_retries: 2
+general_settings: {}
